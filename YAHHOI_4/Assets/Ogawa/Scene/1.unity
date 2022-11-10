@@ -413,6 +413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1841085067}
   - component: {fileID: 1841085066}
+  - component: {fileID: 1841085068}
   m_Layer: 0
   m_Name: back
   m_TagString: Untagged
@@ -465,7 +466,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 12.63271, y: 4.8}
+  m_Size: {x: 15.979754, y: 4.7909}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -479,9 +480,23 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841085065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.253, y: 0, z: 10}
+  m_LocalPosition: {x: 35.5611, y: 0.0017, z: 10}
   m_LocalScale: {x: 5.561956, y: 2.087198, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841085068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841085065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -0.005
+  time: 1000
