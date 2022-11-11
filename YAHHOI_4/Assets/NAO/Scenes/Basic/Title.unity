@@ -404,7 +404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.23420052}
   m_AnchorMax: {x: 0.7891992, y: 1}
-  m_AnchoredPosition: {x: 24.777, y: -8.7785}
+  m_AnchoredPosition: {x: 12.145, y: -5.8262}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299827546
@@ -1357,8 +1357,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.028}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.3217, y: -120.144104}
-  m_SizeDelta: {x: 235.071, y: 74.966}
+  m_AnchoredPosition: {x: 274, y: 6}
+  m_SizeDelta: {x: 115.223, y: 49.7542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162918405
 MonoBehaviour:
@@ -1403,7 +1403,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1162918406}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1162918408}
+        m_TargetAssemblyTypeName: Scene, Assembly-CSharp
+        m_MethodName: OnClickStartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1162918406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,8 +1503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.028}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.3217, y: -263.1441}
-  m_SizeDelta: {x: 235.071, y: 74.966}
+  m_AnchoredPosition: {x: 274, y: -65}
+  m_SizeDelta: {x: 115.223, y: 49.7542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217124685
 MonoBehaviour:
@@ -1701,7 +1713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.23420052}
   m_AnchorMax: {x: 0.7891992, y: 1}
-  m_AnchoredPosition: {x: 24.777, y: -8.7785}
+  m_AnchoredPosition: {x: 12.145, y: -5.8262}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379207975
@@ -1780,7 +1792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.23420052}
   m_AnchorMax: {x: 0.7891992, y: 1}
-  m_AnchoredPosition: {x: 24.777, y: -8.7785}
+  m_AnchoredPosition: {x: 12.145, y: -5.8262}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486439072
@@ -1837,6 +1849,7 @@ GameObject:
   - component: {fileID: 1648949300}
   - component: {fileID: 1648949299}
   - component: {fileID: 1648949298}
+  - component: {fileID: 1648949301}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1861,8 +1874,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.028}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.3217, y: 14.372894}
-  m_SizeDelta: {x: 235.071, y: 74.966}
+  m_AnchoredPosition: {x: 275.0677, y: 70.625}
+  m_SizeDelta: {x: 115.223, y: 49.7542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648949298
 MonoBehaviour:
@@ -1907,7 +1920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1648949299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1648949301}
+        m_TargetAssemblyTypeName: Scene, Assembly-CSharp
+        m_MethodName: OnClickStartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1648949299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,6 +1971,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648949296}
   m_CullTransparentMesh: 1
+--- !u!114 &1648949301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648949296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1bfed3e58ea0c48b934e70d505ff53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: 1
 --- !u!1 &1685093144
 GameObject:
   m_ObjectHideFlags: 0

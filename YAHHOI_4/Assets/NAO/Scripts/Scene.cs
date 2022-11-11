@@ -7,18 +7,9 @@ public class Scene : MonoBehaviour
 {
     public string SceneName;
 
-    // Start is called before the first frame update
-    void Start()
+    public void OnClickStartButton()
     {
-
+        SceneManager.LoadScene(SceneName);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Return)||Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButton(0))
-        {
-            SceneManager.LoadScene(SceneName);
-        }
-    }
 }
