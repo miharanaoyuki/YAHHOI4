@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Player_copy : MonoBehaviour
 {
-    public float speed;
-    public GameObject bullet;//攻撃時の弾:選択可
-    private Vector3 pos;//位置情報取得用
-    private float b_x, b_y = 0.0f;//弾の座標
-    bool pushFlag = true;//押したかどうか
-
+    public float speed;//歩く速さ
     void Start()
     {
         speed = speed / 400;
@@ -42,15 +37,5 @@ public class Player_copy : MonoBehaviour
 
         transform.position = Position;
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            if (pushFlag)
-            {
-                pushFlag = false;
-                pos=this.transform.position;//ここでプレイヤーの座標を取得
-                //生成、右に飛ばす
-                Instantiate(bullet);
-            }
-        }
     }
 }
