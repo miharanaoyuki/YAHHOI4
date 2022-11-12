@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NAO/Scenes/Basic/Rule1.unity
     guid: c606299f162ce4cbaade9ecc3433a069
+  - enabled: 1
+    path: Assets/Ogawa/Scene/1.unity
+    guid: 7e0ca53323801b842922d3f95316aa5d
   m_configObjects: {}
