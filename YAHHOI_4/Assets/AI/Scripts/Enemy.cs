@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
-    GameObject enemy;   //オブジェクト
     public float move = 0.0f;  //速度
     float x, y = 0.0f;  //縦横
 
@@ -14,7 +13,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
     }
 
     // Update is called once per frame
@@ -23,8 +21,7 @@ public class Enemy : MonoBehaviour
         x -= move;
 
         //左には負の値を
-        rb.velocity = new Vector2(x, y);
-        //Instantiate(enemy);
+        rb.velocity = new Vector2(x/1000, y);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,9 +29,13 @@ public class Enemy : MonoBehaviour
         {
             HP--;
         }
-        if (HP < 0)
+        if (HP == 0)
         {
             Destroy(this.gameObject);
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }

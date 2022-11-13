@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public float b_x = 0.0f;//弾の速度
-    public float Limit = 0;   //表示時間(敢えて小数点使用不可に)
+    public float Limit = 0;   //表示時間
     public GameObject original;//攻撃時の弾指定用:選択可
 
     private GameObject bullet;//攻撃時の弾:選択不可
