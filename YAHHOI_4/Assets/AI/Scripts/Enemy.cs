@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
     public float Xmove = 0.0f;  //X軸の速度
-    public float Ymove = 0.0f;  //Y軸の速度
     float x, y = 0.0f;  //縦横
 
     // Start is called before the first frame update
