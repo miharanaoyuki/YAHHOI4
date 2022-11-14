@@ -21,8 +21,8 @@ public class EnemyWave : MonoBehaviour
     void Update()
     {
         time += 1;
-        x -= Xmove;
-        y -= Ymove;
+        x += -Xmove;
+        y += Ymove;
         if (ReverseTime <= time)
         {
             y = -y;
@@ -31,6 +31,7 @@ public class EnemyWave : MonoBehaviour
 
         //¶‚É‚Í•‰‚Ì’l‚ð
         rb.velocity = new Vector2(x / 1000, y / 1000);
+        Debug.Log("YÀ•WF" + y);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

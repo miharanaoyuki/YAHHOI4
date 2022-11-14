@@ -11,8 +11,8 @@ public class EnemyAttack : MonoBehaviour
     private Vector2 pos;
 
     public float speed = 0.0f;  //’e‘¬
-    private int Limit = 0;      //”­ŽËŠÔŠu
-
+    public int Limit = 0;      //”­ŽËŠÔŠu(60‚Å1•b)
+    private int time = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +22,9 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Limit += 1;
+        time += 1;
 
-        if (Limit % 60 == 0)
+        if (time % Limit == 0)
         {
             pos = this.transform.position;
             pos.x += -1;
