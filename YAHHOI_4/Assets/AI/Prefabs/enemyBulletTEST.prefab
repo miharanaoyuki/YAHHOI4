@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6087461167730147640}
   - component: {fileID: 1591152063261743821}
   - component: {fileID: 6508795911574846138}
+  - component: {fileID: 108782622786612969}
   m_Layer: 0
   m_Name: enemyBulletTEST
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.8490566, g: 0.83927226, b: 0.56470275, a: 1}
+  m_Color: {r: 0.8301887, g: 0.79751974, b: 0.035243843, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,7 +109,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4634426084875534723}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -121,3 +122,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &108782622786612969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634426084875534723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0150888b4fc990343afc26ede01f15b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
