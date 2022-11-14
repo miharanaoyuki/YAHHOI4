@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public float speed;
 
+    public Slider slider;
+
     void Start()
     {
-        speed = speed / 400;
+        slider.value = 5;
+        speed = speed / 100;
     }
 
     void Update()
@@ -37,5 +41,17 @@ public class Player : MonoBehaviour
         }
 
         transform.position = Position;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            slider.value--;
+        }
+        if (slider.value == 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
