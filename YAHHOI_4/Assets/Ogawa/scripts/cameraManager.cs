@@ -24,6 +24,11 @@ public class cameraManager : MonoBehaviour
             cameraPos.x = 0; // ƒJƒƒ‰‚Ì‰¡ˆÊ’u‚É0‚ğ“ü‚ê‚é
         }
 
+        if(target.transform.position.x>70)
+        {
+            cameraPos.x = 70;
+        }
+
         // ‚à‚µ‘ÎÛ‚ÌcˆÊ’u‚ª0‚æ‚è¬‚³‚¢ê‡
         if (target.transform.position.y < 0)
         {

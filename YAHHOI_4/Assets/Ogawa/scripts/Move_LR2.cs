@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move_LR : MonoBehaviour
+public class Move_LR2 : MonoBehaviour
 {
     public float move;
     public float time;
@@ -17,13 +17,13 @@ public class Move_LR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(move, 0, 0);
+        transform.position += new Vector3(move * 2, -move * 1.5f, 0);
 
         counter++;
 
-        if (counter==time)
+        if (counter == time)
         {
-            
+
         }
     }
 }
