@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyWave : MonoBehaviour
 {
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
     public float Xmove = 0.0f;  //X軸の速度
     public float Ymove = 0.0f;  //Y軸の速度
     float x, y = 0.0f;  //縦横
-
+    public int ReverseTime = 0;//上下反転する間隔
+    private int time = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +20,15 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += 1;
         x -= Xmove;
-        y += 0;
+        y -= Ymove;
+        if (ReverseTime <= time)
+        {
+            y = -y;
+            time = 0;
+        }
+
         //左には負の値を
         rb.velocity = new Vector2(x / 1000, y / 1000);
     }

@@ -10,10 +10,9 @@ public class EnemyAttack : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 pos;
 
-    public float speed = 0.0f;//’e‘¬
-    private int Limit = 0;
+    public float speed = 0.0f;  //’e‘¬
+    private int Limit = 0;      //”­ŽËŠÔŠu
 
-    bool shootFlag = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Limit += 1;
 
