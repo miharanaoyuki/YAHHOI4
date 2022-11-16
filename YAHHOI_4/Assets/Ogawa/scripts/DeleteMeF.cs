@@ -6,7 +6,7 @@ public class DeleteMeF : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall")|| 
+        if (collision.gameObject.CompareTag("Wall") ||
             collision.gameObject.CompareTag("Player"))
         {
             Destroy(this.gameObject);
@@ -14,7 +14,7 @@ public class DeleteMeF : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             Destroy(this.gameObject);
         }

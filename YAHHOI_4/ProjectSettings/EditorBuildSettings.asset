@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ogawa/Scene/1.unity
     guid: 7e0ca53323801b842922d3f95316aa5d
+  - enabled: 1
+    path: Assets/NAO/Scenes/Stage/3.unity
+    guid: 35d9c07ebbfe142aa971a7c5a7e60cfe
+  - enabled: 1
+    path: Assets/NAO/Scenes/Stage/4.unity
+    guid: a5e25612903574bc1bfa8037a6e7a08d
   m_configObjects: {}
