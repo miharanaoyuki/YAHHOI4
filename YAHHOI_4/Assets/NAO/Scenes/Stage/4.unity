@@ -825,7 +825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1 &223135205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,7 +2782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1 &1106103631
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,7 +4783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1 &1998368476
 GameObject:
   m_ObjectHideFlags: 0
@@ -5229,7 +5229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1001 &220840805256526198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5406,7 +5406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1001 &2183509932303809668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5583,7 +5583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1001 &3961528112047464483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5765,7 +5765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1001 &4052717256919719144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5942,7 +5942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1001 &5931197256583105935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6119,7 +6119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 1
+  enemyHP: 4
 --- !u!1001 &5976637000419610603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6127,6 +6127,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 52556388}
     m_Modifications:
+    - target: {fileID: 1933941330567103053, guid: 2b7fb2a62be12b14f8de826d979c2c39, type: 3}
+      propertyPath: enemyHP
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5976637000364499939, guid: 2b7fb2a62be12b14f8de826d979c2c39, type: 3}
       propertyPath: m_RootOrder
       value: 6
