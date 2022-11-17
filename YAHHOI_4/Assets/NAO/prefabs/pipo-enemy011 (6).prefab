@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5976637000364499939}
   - component: {fileID: 5976637000364499943}
-  - component: {fileID: 5976637000364499936}
   - component: {fileID: 5976637000364499937}
   - component: {fileID: 5976637000364499938}
+  - component: {fileID: 1933941330567103053}
   m_Layer: 0
   m_Name: pipo-enemy011 (6)
   m_TagString: Enemy
@@ -85,21 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5976637000364499936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5976637000364499948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 536582dff2a0d470c8ab70d855865409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 1282758803720205895, guid: 155a1283890ff42799d422567e966b45, type: 3}
-  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 5
 --- !u!114 &5976637000364499937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +216,18 @@ PolygonCollider2D:
       - {x: -0.31, y: -2.1399999}
       - {x: -0.26, y: -2.12}
       - {x: -0.17, y: -2.06}
+--- !u!114 &1933941330567103053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976637000364499948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
+  enemyHP: 1
