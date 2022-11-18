@@ -238,11 +238,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 18891915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &18891919
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -343,7 +344,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &18891921
+--- !u!114 &18891920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -352,12 +353,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 18891915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &36614465 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1879651579067665414, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
@@ -473,11 +473,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 36614465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &36614469
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -578,7 +579,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &36614471
+--- !u!114 &36614470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,12 +588,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 36614465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &41481361 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 297819599299255956, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
@@ -612,26 +612,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 41481361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
---- !u!114 &41481364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41481361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
 --- !u!82 &41481365
 AudioSource:
   m_ObjectHideFlags: 0
@@ -828,6 +814,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &41481367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41481361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &54370508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1924,11 +1924,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 112367496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &112367499
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2125,7 +2126,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &112367502
+--- !u!114 &112367501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2134,12 +2135,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 112367496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &143365537
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,21 +2638,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 1360673118}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &196911224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196911222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &196911225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2662,11 +2647,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 196911222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &196911226
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2863,6 +2849,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &196911228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196911222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &234395153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,21 +3349,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 1130680893}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &286587100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286587098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &286587101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3373,11 +3358,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 286587098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &286587102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3574,6 +3560,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &286587104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286587098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &297475755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7698000617017631191, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
@@ -3593,21 +3593,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 297475755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
---- !u!114 &297475758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297475755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
@@ -3809,6 +3795,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &297475761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297475755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &300908804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,11 +4025,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 323161204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &323161207
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4226,7 +4227,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &323161210
+--- !u!114 &323161209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4235,12 +4236,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 323161204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &335946092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4495,21 +4495,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 1682481935}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &371801856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371801854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &371801857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4519,11 +4504,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 371801854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &371801858
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4720,6 +4706,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &371801860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371801854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &412131503
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,11 +5144,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 455276696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &455276699
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5249,7 +5250,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &455276701
+--- !u!114 &455276700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5258,12 +5259,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 455276696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1001 &459853635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5544,21 +5544,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
   m_PrefabInstance: {fileID: 1057994094}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &519214233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519214231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &519214234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5568,11 +5553,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519214231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &519214235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5769,6 +5755,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &519214237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519214231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &523624287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5859,11 +5859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.06
+      value: 7.17
       objectReference: {fileID: 0}
     - target: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.67
+      value: -3.33
       objectReference: {fileID: 0}
     - target: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5909,21 +5909,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7979943273525446171, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
   m_PrefabInstance: {fileID: 1194261721}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &544734694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544734692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &544734695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5933,11 +5918,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 544734692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &544734696
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6134,6 +6120,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &544734698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544734692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &545654671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6340,11 +6340,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 580399158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &580399161
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6541,7 +6542,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &580399164
+--- !u!114 &580399163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6550,12 +6551,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 580399158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &585534984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2630351399280437859, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
@@ -6575,7 +6575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 585534984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   move: 10
@@ -6638,56 +6638,58 @@ PolygonCollider2D:
       - {x: 0.60499996, y: 0.71999997}
       - {x: 0.705, y: 0.84}
       - {x: 0.78499997, y: 0.90999997}
-      - {x: 0.85499996, y: 1.01}
-      - {x: 0.945, y: 1}
-      - {x: 1.0649999, y: 1.06}
-      - {x: 1.115, y: 1.13}
-      - {x: 1.0129519, y: 0.76693314}
-      - {x: 1.827623, y: 0.9842876}
-      - {x: 1.0490624, y: 0.82750356}
-      - {x: 0.9044215, y: 0.7226232}
-      - {x: 0.95632505, y: 0.43715072}
-      - {x: 1.041343, y: 0.8984315}
+      - {x: 0.8151159, y: 1.0033528}
+      - {x: 0.73228633, y: 0.8869957}
+      - {x: 0.75922364, y: 0.8539333}
+      - {x: 0.55662555, y: 0.8242234}
+      - {x: 0.70052814, y: 0.63398683}
+      - {x: 0.72416914, y: 0.5987434}
+      - {x: 0.66832006, y: 0.59661555}
+      - {x: 0.61227286, y: 0.5890013}
+      - {x: 0.6502235, y: 0.62143683}
+      - {x: 0.61858726, y: 0.6362082}
+      - {x: 0.7896107, y: 0.32600763}
+      - {x: 0.5494409, y: 0.64583343}
       - {x: 0.5902606, y: 0.7883357}
       - {x: 0.5940684, y: 0.8502398}
-      - {x: 0.80120564, y: 0.6813117}
-      - {x: 0.8669183, y: 0.59428763}
-      - {x: 0.96346265, y: 0.48999998}
-      - {x: 1.4376231, y: 0.027263746}
-      - {x: 0.9875107, y: 0.4284485}
-      - {x: 1.088098, y: 0.4022134}
+      - {x: 0.5685494, y: 0.5749547}
+      - {x: 0.7344429, y: 0.58875924}
+      - {x: 0.77590865, y: 0.38580337}
+      - {x: 0.8888543, y: 0.06199599}
+      - {x: 0.8207958, y: 0.3381447}
+      - {x: 0.79634696, y: 0.33274898}
       - {x: 0.48490107, y: 0.9470099}
       - {x: 0.834347, y: 0.15907392}
-      - {x: 1.0993016, y: -0.05940762}
-      - {x: 0.7885958, y: 0.14523269}
-      - {x: 1.4025176, y: -0.18404791}
+      - {x: 0.8561763, y: 0.14898568}
+      - {x: 0.85946, y: 0.0636317}
+      - {x: 0.8398556, y: 0.17022073}
       - {x: 1.0132362, y: 0.27011287}
       - {x: 0.86776423, y: 0.18928072}
       - {x: 0.9100045, y: 0.20579699}
-      - {x: 1.4463403, y: 0.008889928}
-      - {x: 1.3938667, y: 0.14875302}
+      - {x: 0.9670358, y: 0.12003304}
+      - {x: 0.87982994, y: 0.21127103}
       - {x: 0.85312414, y: 0.03571228}
-      - {x: 1.2369211, y: 0.043774515}
-      - {x: 1.2210287, y: 0.18863381}
+      - {x: 0.90349185, y: 0.16186407}
+      - {x: 0.8528673, y: 0.19558026}
       - {x: 0.55324507, y: 0.46895477}
       - {x: 0.90721285, y: 0.29141077}
-      - {x: 1.0509806, y: 0.3573766}
+      - {x: 0.9089263, y: 0.15999348}
       - {x: 0.7198449, y: 0.45761296}
       - {x: 0.95038784, y: 0.24380818}
-      - {x: 0.87765086, y: 0.7441608}
+      - {x: 0.6582897, y: 0.5979199}
       - {x: 0.73491544, y: 0.76083213}
-      - {x: 0.7857141, y: 0.90087706}
+      - {x: 0.6461205, y: 0.7812254}
       - {x: 0.6787232, y: 0.84000003}
       - {x: 0.7174678, y: 0.8332541}
-      - {x: 0.9063842, y: 0.883869}
-      - {x: 0.78205353, y: 0.80131155}
+      - {x: 0.607255, y: 0.7376281}
+      - {x: 0.6557549, y: 0.7215437}
       - {x: 0.7601787, y: 1.1725361}
       - {x: 0.69632965, y: 0.92878044}
-      - {x: 1.209492, y: 0.94086707}
-      - {x: 1.0289487, y: 0.41607898}
+      - {x: 0.63772815, y: 0.6417514}
+      - {x: 0.8344481, y: 0.30493587}
       - {x: 0.28395653, y: 1.0064317}
       - {x: 1.0587965, y: 1.2317443}
-      - {x: 0.694901, y: 0.6671509}
+      - {x: 0.60202736, y: 0.6870525}
       - {x: 0.6120162, y: 0.93524814}
       - {x: 0.36790907, y: 1.0434555}
       - {x: 0.995, y: 1.29}
@@ -7259,11 +7261,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.41
+      value: -4.64
       objectReference: {fileID: 0}
     - target: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.94
+      value: 2.42
       objectReference: {fileID: 0}
     - target: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7400,21 +7402,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &660247046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660247044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &660247047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7424,11 +7411,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 660247044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &660247048
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7529,6 +7517,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &660247049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660247044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!4 &660247050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
@@ -7797,11 +7799,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 675445962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &675445965
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7998,7 +8001,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &675445968
+--- !u!114 &675445967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8007,12 +8010,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 675445962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &677397308
 GameObject:
   m_ObjectHideFlags: 0
@@ -8442,21 +8444,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 767322465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
---- !u!114 &767322468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767322465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
@@ -8658,6 +8646,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &767322471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767322465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &773283324
 GameObject:
   m_ObjectHideFlags: 0
@@ -9043,21 +9045,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 801362419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
---- !u!114 &801362422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801362419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
@@ -9259,6 +9247,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &801362425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801362419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &811075429
 GameObject:
   m_ObjectHideFlags: 0
@@ -9618,11 +9620,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 892225996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &892226000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9723,7 +9726,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &892226002
+--- !u!114 &892226001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9732,12 +9735,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 892225996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1001 &927833385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9936,6 +9938,7 @@ GameObject:
   - component: {fileID: 997009079}
   - component: {fileID: 997009081}
   - component: {fileID: 997009080}
+  - component: {fileID: 997009082}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -10004,6 +10007,202 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997009078}
   m_CullTransparentMesh: 1
+--- !u!114 &997009082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997009078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ab1fc65b4d3469f958e3ea45eeb892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeMode: 0
+  duration: 2
+  speed: 5
+  delay: 0
+  style: 1
+  playOnAwake: 1
+  m_progress: 0.10073686
+  usePosition: 1
+  useRotation: 1
+  useScale: 0
+  useAlpha: 0
+  useColor: 0
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  characterNumber: 12
+  positionFrom: {x: 0, y: 0, z: 0}
+  positionTo: {x: 0, y: 50, z: 0}
+  positionAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.39990997
+      value: 0.93478775
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 0
+    m_RotationOrder: 4
+  positionSeparation: 0.5
+  rotationFrom: 0
+  rotationTo: 0
+  rotationPivot: {x: 0.5, y: 0.5}
+  rotationAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotationSeparation: 0.5
+  scaleSyncXY: 1
+  scaleFrom: 0
+  scaleTo: 1
+  scalePivot: {x: 0.5, y: 0.5}
+  scaleAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleFromY: 0
+  scaleToY: 1
+  scalePivotY: {x: 0.5, y: 0.5}
+  scaleAnimationCurveY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleSeparation: 0.5
+  alphaFrom: 0
+  alphaTo: 1
+  alphaAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  alphaSeparation: 0.5
+  colorFrom: {r: 1, g: 1, b: 1, a: 1}
+  colorTo: {r: 1, g: 1, b: 1, a: 1}
+  colorAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colorSeparation: 0.5
 --- !u!1 &1001226905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 297819599299255956, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
@@ -10014,21 +10213,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
   m_PrefabInstance: {fileID: 1224165512}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1001226907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001226905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1001226908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10038,11 +10222,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1001226905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1001226909
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10239,6 +10424,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1001226911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001226905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1001233499
 GameObject:
   m_ObjectHideFlags: 0
@@ -10629,21 +10828,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1048430689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
---- !u!114 &1048430692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048430689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
@@ -10845,6 +11030,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1048430695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048430689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1050408662
 GameObject:
   m_ObjectHideFlags: 0
@@ -11486,11 +11685,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069928077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &1069928080
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11591,7 +11791,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &1069928082
+--- !u!114 &1069928081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11600,12 +11800,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069928077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1001 &1075839639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11786,11 +11985,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075839641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &1075839644
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11891,7 +12091,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &1075839646
+--- !u!114 &1075839645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11900,12 +12100,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075839641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &1116725112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7698000617017631191, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
@@ -11925,21 +12124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1116725112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
---- !u!114 &1116725115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116725112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
@@ -12141,6 +12326,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1116725118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116725112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1124421890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 297819599299255956, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
@@ -12151,21 +12350,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
   m_PrefabInstance: {fileID: 1204978938}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1124421892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124421890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1124421893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12175,11 +12359,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1124421890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1124421894
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12376,6 +12561,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1124421896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124421890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &1130680893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12451,21 +12650,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6336731888032604662, guid: 0e41c1c1d52a04c0cab83a441330af1a, type: 3}
   m_PrefabInstance: {fileID: 523624287}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1141152896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141152894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1141152897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12475,11 +12659,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141152894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1141152898
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12676,6 +12861,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1141152900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141152894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!4 &1166504912
 Transform:
   m_ObjectHideFlags: 0
@@ -12852,21 +13051,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4767124874623111846, guid: 25720367105164a5f9df144f22d2217e, type: 3}
   m_PrefabInstance: {fileID: 54370508}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1186778321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186778320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 5
 --- !u!114 &1186778322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12876,7 +13060,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1186778320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
+  enemyHP: 5
+--- !u!114 &1186778323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186778320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   move: -5
@@ -13335,21 +13534,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7979943273525446171, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
   m_PrefabInstance: {fileID: 545654671}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1266058386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266058384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1266058387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13359,11 +13543,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266058384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1266058388
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13560,6 +13745,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1266058390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266058384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &1268444741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13644,11 +13843,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1268444743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1268444745
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13845,7 +14045,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &1268444748
+--- !u!114 &1268444747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13854,12 +14054,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1268444743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &1288588869
 GameObject:
   m_ObjectHideFlags: 0
@@ -14288,21 +14487,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7979943273525446171, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
   m_PrefabInstance: {fileID: 266089349}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1330450915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330450913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1330450916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14312,11 +14496,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1330450913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1330450917
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14513,6 +14698,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1330450919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330450913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &1342746770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14588,21 +14787,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 488060542}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1349993437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349993435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1349993438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14612,11 +14796,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1349993435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1349993439
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14813,6 +14998,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1349993441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349993435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &1360079451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14888,21 +15087,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7698000617017631191, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
   m_PrefabInstance: {fileID: 1360079451}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1360079454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360079453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1360079455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14912,11 +15096,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1360079453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1360079456
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15113,6 +15298,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1360079458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360079453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &1360673118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15188,21 +15387,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7979943273525446171, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
   m_PrefabInstance: {fileID: 1507431738}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1374246295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374246293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1374246296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15212,11 +15396,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1374246293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1374246297
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15413,6 +15598,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1374246299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374246293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1427391028
 GameObject:
   m_ObjectHideFlags: 0
@@ -15610,21 +15809,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 1618289929}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1434129712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434129710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1434129713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15634,11 +15818,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434129710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1434129714
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15835,6 +16020,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1434129716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434129710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &1437503482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16162,21 +16361,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 741555005}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1547317174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547317172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1547317175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16186,11 +16370,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1547317172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1547317176
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16387,6 +16572,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1547317178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547317172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1552118482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7698000617017631191, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
@@ -16488,21 +16687,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1552118484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552118482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1552118485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16512,11 +16696,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552118482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &1552118486
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16617,6 +16802,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1552118487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552118482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!4 &1552118488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7979943273525446171, guid: 9b8ccd8bf6725456ca51c75d71e9b01c, type: 3}
@@ -16632,21 +16831,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 1928247496}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1590735629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590735627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1590735630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16656,11 +16840,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590735627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1590735631
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16857,6 +17042,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1590735633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590735627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1596819186
 GameObject:
   m_ObjectHideFlags: 0
@@ -17120,11 +17319,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1611688955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1611688958
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17321,7 +17521,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &1611688961
+--- !u!114 &1611688960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17330,12 +17530,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1611688955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1001 &1618289929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17581,11 +17780,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1662315860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &1662315864
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17686,7 +17886,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &1662315866
+--- !u!114 &1662315865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17695,12 +17895,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1662315860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &1666052960
 GameObject:
   m_ObjectHideFlags: 0
@@ -17898,21 +18097,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 1627181663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1683129961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683129959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1683129962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17922,11 +18106,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1683129959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1683129963
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18123,6 +18308,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1683129965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683129959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1689579216
 GameObject:
   m_ObjectHideFlags: 0
@@ -18412,11 +18611,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1716290286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &1716290289
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18517,7 +18717,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &1716290291
+--- !u!114 &1716290290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18526,12 +18726,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1716290286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1001 &1731601876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18607,21 +18806,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 459853635}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1801918872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801918870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!114 &1801918873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18631,11 +18815,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1801918870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!82 &1801918874
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18832,6 +19017,20 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &1801918876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801918870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1812348911
 GameObject:
   m_ObjectHideFlags: 0
@@ -18954,11 +19153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.01
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19755,11 +19954,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065356032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &2065356036
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19860,7 +20060,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &2065356038
+--- !u!114 &2065356037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19869,12 +20069,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065356032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1 &2076795646
 GameObject:
   m_ObjectHideFlags: 0
@@ -20416,11 +20615,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142275515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -5
-  time: 1000
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!60 &2142275519
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20521,7 +20721,7 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
---- !u!114 &2142275521
+--- !u!114 &2142275520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20530,12 +20730,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142275515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
+  move: -5
+  time: 1000
 --- !u!1001 &2156795340801065816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20650,11 +20849,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8700889490643852020, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -52.24
+      value: -57.7
       objectReference: {fileID: 0}
     - target: {fileID: 8700889490643852020, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2303
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8700889490643852020, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20760,6 +20959,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1879651579067665414, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
   m_PrefabInstance: {fileID: 7867483318445437325}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7867483318445437327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867483318445437326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
 --- !u!114 &7867483318445437328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20769,7 +20983,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7867483318445437326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   move: -5
@@ -20970,21 +21184,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7867483318445437331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7867483318445437326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815f24431ee1c90479f4cd76b2b4a23f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
 --- !u!4 &7867483318445437332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
