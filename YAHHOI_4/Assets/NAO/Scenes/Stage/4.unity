@@ -703,7 +703,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 220840804644366994, guid: ef009bc53990f3d4197049f4a0ce9259, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef009bc53990f3d4197049f4a0ce9259, type: 3}
 --- !u!4 &148129708 stripped
 Transform:
@@ -825,7 +826,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &148129712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148129709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &223135205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,7 +2675,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4052717254946458809, guid: 575617b91752411428d61c785ebca0e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 575617b91752411428d61c785ebca0e6, type: 3}
 --- !u!4 &1059651539 stripped
 Transform:
@@ -2782,7 +2798,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &1059651543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059651540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1106103631
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,7 +4787,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4052717254946458809, guid: 575617b91752411428d61c785ebca0e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 575617b91752411428d61c785ebca0e6, type: 3}
 --- !u!4 &1991908042 stripped
 Transform:
@@ -4783,7 +4814,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &1991908045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991908043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1 &1998368476
 GameObject:
   m_ObjectHideFlags: 0
@@ -5112,7 +5157,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 215679311590058376, guid: e59f9c32e2db389438a85011e81943b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e59f9c32e2db389438a85011e81943b6, type: 3}
 --- !u!1 &215679310409020904 stripped
 GameObject:
@@ -5229,7 +5275,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &215679310409020907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215679310409020904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &220840805256526198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5289,7 +5349,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 220840804644366994, guid: ef009bc53990f3d4197049f4a0ce9259, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef009bc53990f3d4197049f4a0ce9259, type: 3}
 --- !u!1 &220840805256526199 stripped
 GameObject:
@@ -5406,7 +5467,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &220840805256526202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220840805256526199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &2183509932303809668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5466,7 +5541,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2183509931115146630, guid: f786e751ca6b99a4a94cb6d0f07573eb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f786e751ca6b99a4a94cb6d0f07573eb, type: 3}
 --- !u!1 &2183509932303809669 stripped
 GameObject:
@@ -5583,7 +5659,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &2183509932303809672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2183509932303809669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &3961528112047464483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5649,6 +5739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3961528112130429166, guid: 3b6a41d795e55524999732fd113d8c44, type: 3}
+    - {fileID: 3961528112130429167, guid: 3b6a41d795e55524999732fd113d8c44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3b6a41d795e55524999732fd113d8c44, type: 3}
 --- !u!1 &3961528112047464484 stripped
 GameObject:
@@ -5765,7 +5856,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &3961528112047464487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3961528112047464484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &4052717256919719144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5825,7 +5930,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4052717254946458809, guid: 575617b91752411428d61c785ebca0e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 575617b91752411428d61c785ebca0e6, type: 3}
 --- !u!1 &4052717256919719145 stripped
 GameObject:
@@ -5942,7 +6048,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &4052717256919719148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052717256919719145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &5931197256583105935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6002,7 +6122,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5931197256882644476, guid: 70ab196b6dc6c014b90da4f430fa599f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 70ab196b6dc6c014b90da4f430fa599f, type: 3}
 --- !u!1 &5931197256583105936 stripped
 GameObject:
@@ -6119,7 +6240,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 4
+  enemyHP: 1
+--- !u!114 &5931197256583105939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931197256583105936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &5976637000419610603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6129,7 +6264,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1933941330567103053, guid: 2b7fb2a62be12b14f8de826d979c2c39, type: 3}
       propertyPath: enemyHP
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5976637000364499939, guid: 2b7fb2a62be12b14f8de826d979c2c39, type: 3}
       propertyPath: m_RootOrder
@@ -6183,7 +6318,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5976637000364499937, guid: 2b7fb2a62be12b14f8de826d979c2c39, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2b7fb2a62be12b14f8de826d979c2c39, type: 3}
 --- !u!1 &5976637000419610604 stripped
 GameObject:
@@ -6301,6 +6437,20 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
   enemyHP: 1
+--- !u!114 &5976637000419610607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976637000419610604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
 --- !u!1001 &9014980151877336458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6372,7 +6522,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9014980151163942724, guid: b7b904abac70db849b35f53eb4775690, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b7b904abac70db849b35f53eb4775690, type: 3}
 --- !u!1 &9014980151877336459 stripped
 GameObject:
@@ -6489,4 +6640,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 20
+  enemyHP: 5
+--- !u!114 &9014980151877336462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014980151877336459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd3b33a1629f4b2fa9bc0127a40e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: -5
+  time: 1000
