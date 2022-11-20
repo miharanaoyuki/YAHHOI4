@@ -6,6 +6,6 @@ public class RoteA : MonoBehaviour
 {
     void Update()
     {
-        transform.Rotate(new Vector3(0, 0, 0.5f));
+        transform.Rotate(new Vector3(0, 0, 20));
     }
 }

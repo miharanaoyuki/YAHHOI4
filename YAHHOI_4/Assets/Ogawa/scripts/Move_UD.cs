@@ -24,6 +24,7 @@ public class Move_UD : MonoBehaviour
         {
             counter = 0;
             move *= -1;
+            
         }
     }
 }
