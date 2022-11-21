@@ -13,6 +13,9 @@ public class EnemyHP : MonoBehaviour
     //HP設定
     public int enemyHP;
 
+    //アイテムドロップ
+ public GameObject itemprefab;
+
     //OnTriggerなので注意！！！
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -33,18 +36,21 @@ public class EnemyHP : MonoBehaviour
                 Destroy(effect, 0.5f);
                 //サウンド再生
                 AudioSource.PlayClipAtPoint(destroySound, transform.position);
+
+ //敵を破壊した瞬間＝敵のHPが0になった瞬間にアイテムプレハブを実体化させる。
+                Instantiate(itemprefab, transform.position, Quaternion.identity);
             }
             Debug.Log(enemyHP);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
         //プレイヤーとタグに当たった時の処理
-        if (collision.gameObject.CompareTag("Wall") ||
-            collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(this.gameObject);
-        }
-    }
+        //if (collision.gameObject.CompareTag("Wall") ||
+            //collision.gameObject.CompareTag("Player"))
+        //{
+           // Destroy(this.gameObject);
+        //}
+    //}
 }
