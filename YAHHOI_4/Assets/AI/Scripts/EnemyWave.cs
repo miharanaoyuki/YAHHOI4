@@ -18,7 +18,7 @@ public class EnemyWave : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         time += 1;
         x += -Xmove;
