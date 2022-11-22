@@ -8,6 +8,9 @@ TagManager:
   - Bullet
   - Wall
   - yahhoi
+  - potion1
+  - potion2
+  - potion3
   layers:
   - Default
   - TransparentFX
