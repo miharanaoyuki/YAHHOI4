@@ -5594,7 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c684c84392334431ab24550e9e12bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Gameover
+  sceneName: Gameover2
   countTime: 30
 --- !u!114 &517389020
 MonoBehaviour:
@@ -10137,7 +10137,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.38861215
+  m_progress: 0
   usePosition: 1
   useRotation: 1
   useScale: 0
@@ -16176,11 +16176,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.19
+      value: 19.76
       objectReference: {fileID: 0}
     - target: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: -1.34
       objectReference: {fileID: 0}
     - target: {fileID: 1691818228417143569, guid: b5c8f4552db2f42e79a9f17b77f5d0cd, type: 3}
       propertyPath: m_LocalPosition.z
