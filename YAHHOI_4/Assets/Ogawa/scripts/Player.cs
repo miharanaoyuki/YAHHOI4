@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float speed;
 
     public Slider slider;
+
+    public string scene;
 
     void Start()
     {
@@ -45,6 +48,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //“G‚Æ‚Ìˆ—
         if (collision.gameObject.CompareTag("Enemy"))
         {
             slider.value--;
@@ -52,6 +56,20 @@ public class Player : MonoBehaviour
         if (slider.value == 0)
         {
             Destroy(this.gameObject);
+            SceneManager.LoadScene(scene);
+        }
+        //‰ñ•œˆ—
+        if(collision.gameObject.CompareTag("potion1"))
+        {
+            slider.value += 1;
+        }
+        if (collision.gameObject.CompareTag("potion2"))
+        {
+            slider.value += 2;
+        }
+        if (collision.gameObject.CompareTag("potion3"))
+        {
+            slider.value += 4;
         }
     }
 }
