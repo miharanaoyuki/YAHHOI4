@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5331952107744725399}
   m_Layer: 0
   m_Name: "\u56DE\u5FA9\u85AC(\u5927)"
-  m_TagString: Untagged
+  m_TagString: potion3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

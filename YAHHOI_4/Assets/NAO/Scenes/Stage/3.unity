@@ -5594,7 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c684c84392334431ab24550e9e12bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Gameover2
+  scene: Gameover2
   countTime: 30
 --- !u!114 &517389020
 MonoBehaviour:
@@ -7278,6 +7278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   slider: {fileID: 313231230}
+  scene: Gameover2
 --- !u!212 &638732090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10137,7 +10138,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 0.6688325
   usePosition: 1
   useRotation: 1
   useScale: 0

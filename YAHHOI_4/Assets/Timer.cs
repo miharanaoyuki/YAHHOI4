@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
-    public string sceneName;
+    public string scene;
     public float countTime;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         GetComponent<Text>().text = countTime.ToString("F2");
         if(countTime<=0.01)
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(scene);
         }
     }
 }
