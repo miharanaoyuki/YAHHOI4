@@ -244,7 +244,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &18891919
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &112367499
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2657,7 +2657,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &196911226
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3369,7 +3369,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &286587102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4038,7 +4038,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &323161207
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4518,7 +4518,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &371801858
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5595,7 +5595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Gameover2
-  countTime: 30
+  countTime: 20
 --- !u!114 &517389020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6029,7 +6029,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &544734696
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6452,7 +6452,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &580399161
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7525,7 +7525,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &660247048
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7914,7 +7914,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &675445965
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8560,7 +8560,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &767322469
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10138,7 +10138,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.6688325
+  m_progress: 0.17666668
   usePosition: 1
   useRotation: 1
   useScale: 0
@@ -10341,7 +10341,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1001226909
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10948,7 +10948,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1048430693
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11806,7 +11806,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &1069928080
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12107,7 +12107,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &1075839644
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12483,7 +12483,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1124421894
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12784,7 +12784,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1141152898
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13184,9 +13184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  enemyHP: 5
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
+  enemyHP: 1
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!114 &1186778323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14928,7 +14928,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1349993439
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15229,7 +15229,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1360079456
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15530,7 +15530,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1374246297
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15953,7 +15953,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1434129714
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16506,7 +16506,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1547317176
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16833,7 +16833,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &1552118486
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16978,7 +16978,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1590735631
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17920,7 +17920,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &1662315864
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18247,7 +18247,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1683129963
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18753,7 +18753,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &1716290289
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18958,7 +18958,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 8317450057714038771, guid: a3020473b0ba449fca724dfba515af95, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!82 &1801918874
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20660,7 +20660,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!60 &2142275519
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21014,7 +21014,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
   enemyHP: 1
-  itemprefab: {fileID: 2453701555020425712, guid: cdb7f0196e7314ab4a2ed0f83371953b, type: 3}
+  itemprefab: {fileID: 3698524050858537214, guid: 14ab614eab196414fb738de5002208fe, type: 3}
 --- !u!114 &7867483318445437328
 MonoBehaviour:
   m_ObjectHideFlags: 0
