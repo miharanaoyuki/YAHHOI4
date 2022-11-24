@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class AreaSpawn_Nomal : MonoBehaviour
 {
-    [SerializeField]List<GameObject> enemyList;//生成オブジェクト
-    [SerializeField] Transform pos;//生成位置
-    [SerializeField] Transform pos2;
-    private float minX, minY, maxX, maxY;//生成範囲
-
+    public GameObject[] enemyList;
+    private GameObject playerObject;
+    private GameObject _mainCamera;
+    Vector2 pos;
+    float minX, minY, maxX, maxY = 0;
     public int Time = 0;
     private int reset = 0;
+
     bool SpawnFlag = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        minX = Mathf.Min(pos.position.x, pos2.position.x);
-        maxX = Mathf.Max(pos.position.x, pos2.position.x);
-        minY = Mathf.Min(pos.position.y, pos2.position.y);
-        maxY = Mathf.Max(pos.position.y, pos2.position.y);
+        _mainCamera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -28,17 +26,23 @@ public class AreaSpawn_Nomal : MonoBehaviour
         if (!SpawnFlag)
         {
             reset++;
-            //timeがresetを超えた時
-            if (Time > reset)
+            //resetがtimeを超えた時
+            if (Time < reset)
             {
                 reset = 0;
                 //ランダム種類と位置を決める
-                int index = Random.Range(0, enemyList.Count);
+                int index = Random.Range(0, enemyList.Length);
                 float posX = Random.Range(minX, maxX);
                 float posY = Random.Range(minY, maxY);
-
-                Instantiate(enemyList[index], new Vector3(posX, posY, 0), Quaternion.identity);
+                pos = enemyList[index].transform.position;
+                pos.x += posX;
+                pos.y += posY;
+                Instantiate(enemyList[index], new Vector2(pos.x, pos.y), Quaternion.identity);
             }
+        }
+        else
+        {
+            SpawnFlag = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
