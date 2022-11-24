@@ -1,0 +1,73 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class Player_test : MonoBehaviour
+{
+    public Slider slider;//スライダー
+    Rigidbody2D pr;//移動
+    float px, py;//移動更新用
+
+    public string SceneName;//ゲームオーバーになった時用
+    public float speed;//プレイヤーの移動速度
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        slider.value = 5;//体力最大値指定(初期化)
+        //初期情報取得
+        pr = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        px = 0.0f;
+        py = 0.0f;
+
+        //移動
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            px += speed;
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            px += -speed;
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            py += speed;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            py += -speed;
+        }
+        pr.velocity = new Vector2(px, py);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        //敵に当たった時の処理
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            slider.value--;
+            //0以下：死　シーンチェンジ
+            if (slider.value == 0)
+            {
+                SceneManager.LoadScene(SceneName);
+            }
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //if (collision.gameObject.CompareTag("Item"))
+        //{
+        //    slider.value += 1;
+        //    Debug.Log(slider.value);
+        //}
+    }
+}
