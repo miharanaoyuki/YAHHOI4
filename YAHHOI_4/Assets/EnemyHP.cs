@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHP : MonoBehaviour
 {
@@ -13,8 +14,11 @@ public class EnemyHP : MonoBehaviour
     //HP設定
     public int enemyHP;
 
+    //シーン移動
+    public string scene;
+
     //アイテムドロップ
- public GameObject itemprefab;
+    public GameObject itemprefab;
 
     //OnTriggerなので注意！！！
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,8 +40,10 @@ public class EnemyHP : MonoBehaviour
                 Destroy(effect, 0.5f);
                 //サウンド再生
                 AudioSource.PlayClipAtPoint(destroySound, transform.position);
+                //任意のシーンに移動する
+                SceneManager.LoadScene(scene);
 
- //敵を破壊した瞬間＝敵のHPが0になった瞬間にアイテムプレハブを実体化させる。
+                //敵を破壊した瞬間＝敵のHPが0になった瞬間にアイテムプレハブを実体化させる。
                 Instantiate(itemprefab, transform.position, Quaternion.identity);
             }
             Debug.Log(enemyHP);
