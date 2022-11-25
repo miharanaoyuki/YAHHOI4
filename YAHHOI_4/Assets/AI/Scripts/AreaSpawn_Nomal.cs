@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class AreaSpawn_Nomal : MonoBehaviour
 {
-    public GameObject[] enemyList;
-    private GameObject playerObject;
-    private GameObject _mainCamera;
-    Vector2 pos;
-    float minX, minY, maxX, maxY = 0;
-    public int Time = 0;
-    private int reset = 0;
+    public Transform target;        //Playerの座標取得用
+    public GameObject[] enemyList;  //敵オブジェクト指定用：配列なので複数指定可
+    Vector2 pos;                    //出現させるオブジェクトの座標用
+    public int Time = 0;            //一定間隔の指定をするためのやつ
+    public float settingX = 0.0f;    //敵の出現座標の指定(Playerから左-:右+にどれだけ離れているか)
+    private int reset = 0;          //カウント
 
     bool SpawnFlag = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        _mainCamera = Camera.main.gameObject;
+
     }
 
     // Update is called once per frame
@@ -29,27 +28,31 @@ public class AreaSpawn_Nomal : MonoBehaviour
             //resetがtimeを超えた時
             if (Time < reset)
             {
-                reset = 0;
                 //ランダム種類と位置を決める
                 int index = Random.Range(0, enemyList.Length);
-                float posX = Random.Range(minX, maxX);
-                float posY = Random.Range(minY, maxY);
+                int PosY = Random.Range(-10, 10);
                 pos = enemyList[index].transform.position;
-                pos.x += posX;
-                pos.y += posY;
-                Instantiate(enemyList[index], new Vector2(pos.x, pos.y), Quaternion.identity);
+                pos.x += target.position.x + settingX;//ここでPlayerより左右に座標を足す
+                Instantiate(enemyList[index], new Vector2(pos.x,PosY), Quaternion.identity);
+                reset = 0;
             }
-        }
-        else
-        {
-            SpawnFlag = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Playerが中に入ったら
         if (collision.gameObject.CompareTag("Player"))
         {
             SpawnFlag = false;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        //Playerが外に出たら
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SpawnFlag = true;
+            reset = 0;
         }
     }
 }
