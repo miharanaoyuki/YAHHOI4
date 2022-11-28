@@ -13,6 +13,7 @@ public class Player_test : MonoBehaviour
     public string SceneName;//ゲームオーバーになった時用
     public float speed;//プレイヤーの移動速度
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,19 +29,20 @@ public class Player_test : MonoBehaviour
         py = 0.0f;
 
         //移動
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.D))
         {
             px += speed;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             px += -speed;
+            
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             py += speed;
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             py += -speed;
         }
