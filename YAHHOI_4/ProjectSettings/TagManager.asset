@@ -11,6 +11,7 @@ TagManager:
   - potion1
   - potion2
   - potion3
+  - numa
   layers:
   - Default
   - TransparentFX
