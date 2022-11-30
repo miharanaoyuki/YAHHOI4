@@ -18,12 +18,5 @@ public class Move_LR : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(move, 0, 0);
-
-        counter++;
-
-        if (counter==time)
-        {
-            
-        }
     }
 }

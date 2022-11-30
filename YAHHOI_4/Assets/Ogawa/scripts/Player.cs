@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
         }
 
         transform.position = Position;
+
+        Debug.Log(speed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -88,6 +90,19 @@ public class Player : MonoBehaviour
         {
             slider.value += 4;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("numa"))
+        {
+            speed = 0.05f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        speed = 0.1f;
     }
 
     void OnDamageEffect()
