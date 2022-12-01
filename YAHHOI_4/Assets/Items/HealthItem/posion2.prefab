@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8719290857852379835}
   - component: {fileID: 7396856131812079006}
   - component: {fileID: 6846460127256444311}
-  - component: {fileID: -7847451466347916023}
+  - component: {fileID: -6241304410798140739}
   m_Layer: 0
-  m_Name: "\u56DE\u5FA9\u85AC(\u4E2D)"
+  m_Name: posion2
   m_TagString: potion3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ PolygonCollider2D:
       - {x: 0.32, y: -1.25}
       - {x: 0.26, y: -1.25}
       - {x: 0.26, y: -1.24}
---- !u!114 &-7847451466347916023
+--- !u!114 &-6241304410798140739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,6 +158,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1029466246974129095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780e993151af0a64993095c9cb12ac19, type: 3}
+  m_Script: {fileID: 11500000, guid: d07a9a5aebd437c42958ec370a780b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
