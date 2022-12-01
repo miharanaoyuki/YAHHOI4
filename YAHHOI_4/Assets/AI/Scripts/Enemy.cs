@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     public float Xmove = 0.0f;  //Xé≤ÇÃë¨ìx
     public float Ymove = 0.0f;
     float x, y = 0.0f;  //ècâ°
-    bool HitFlag = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,21 +30,18 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HitFlag = false;
+        //HitFlag = false;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            if (!HitFlag)
-            {
-                HP--;
-            }
+            HP--;
             if (HP == 0)
             {
-                Destroy(this.gameObject);
                 GetComponent<AudioSource>().PlayOneShot(clip);
                 Instantiate(effect, transform.position, Quaternion.identity);
+                Destroy(this.gameObject);
             }
         }
         if (collision.gameObject.CompareTag("Wall"))
