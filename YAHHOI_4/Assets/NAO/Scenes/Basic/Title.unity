@@ -383,7 +383,7 @@ MonoBehaviour:
   delay: 0
   style: 0
   playOnAwake: 1
-  m_progress: 0.37333336
+  m_progress: 0.02
   usePosition: 0
   useRotation: 0
   useScale: 0
@@ -1350,8 +1350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2551, y: -4437}
-  m_SizeDelta: {x: 17971.48, y: 18463.12}
+  m_AnchoredPosition: {x: 84, y: -86}
+  m_SizeDelta: {x: 2111.09, y: 1282.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324638924
 MonoBehaviour:
