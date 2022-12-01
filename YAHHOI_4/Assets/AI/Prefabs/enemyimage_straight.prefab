@@ -96,7 +96,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -145,8 +145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f091028141353d4b85e0a4d2cafb0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  clip: {fileID: 8300000, guid: fcceb97a2f6a5a94fbc9978dc3de7f29, type: 3}
   HP: 3
   Xmove: 6
+  Ymove: 0
 --- !u!114 &4125580695716356917
 MonoBehaviour:
   m_ObjectHideFlags: 0

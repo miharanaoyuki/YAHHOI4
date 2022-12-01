@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject effect;
+    public AudioClip clip;
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
     public float Xmove = 0.0f;  //X軸の速度
@@ -14,6 +16,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        clip = gameObject.GetComponent<AudioSource>().clip;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -41,9 +44,10 @@ public class Enemy : MonoBehaviour
             if (HP == 0)
             {
                 Destroy(this.gameObject);
+                GetComponent<AudioSource>().PlayOneShot(clip);
+                Instantiate(effect, transform.position, Quaternion.identity);
             }
         }
-
         if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
