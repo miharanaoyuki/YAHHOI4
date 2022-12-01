@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1691818228417143569}
   - component: {fileID: 2710517097706994937}
   - component: {fileID: 9097706166281006256}
-  - component: {fileID: -867250137572456325}
   - component: {fileID: 3207468278598880559}
   m_Layer: 0
   m_Name: enemyA
@@ -99,23 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: -5
   time: 1000
---- !u!114 &-867250137572456325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879651579067665414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
-  scene: 
-  itemprefab: {fileID: 1308358888122577167, guid: 3eb56c3726cc20f44bab071520b7f0cd, type: 3}
 --- !u!60 &3207468278598880559
 PolygonCollider2D:
   m_ObjectHideFlags: 0
