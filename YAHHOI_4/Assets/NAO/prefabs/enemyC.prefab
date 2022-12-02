@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7979943273525446171}
   - component: {fileID: 9083453063687545376}
   - component: {fileID: 4914769021734672683}
-  - component: {fileID: 8200302338287837131}
   - component: {fileID: 7233939485379690170}
+  - component: {fileID: 3852847088310186381}
   m_Layer: 0
   m_Name: enemyC
   m_TagString: Untagged
@@ -99,23 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: -5
   time: 1000
---- !u!114 &8200302338287837131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7698000617017631191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 8300000, guid: 5b4b1cc2c1fbc4388ba3e686a083a6db, type: 3}
-  enemyHP: 1
-  scene: 
-  itemprefab: {fileID: 8109581056281870117, guid: a77ee5a436f6cc246a435522e996a11e, type: 3}
 --- !u!60 &7233939485379690170
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -126,7 +109,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -215,3 +198,19 @@ PolygonCollider2D:
       - {x: -0.19, y: -2.1599998}
       - {x: -0.12, y: -2.19}
       - {x: -0.06, y: -2.2}
+--- !u!114 &3852847088310186381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698000617017631191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fd6174540d09d4a8cb5381963c9b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 1
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
+  itemPrefab: {fileID: 8109581056281870117, guid: a77ee5a436f6cc246a435522e996a11e, type: 3}

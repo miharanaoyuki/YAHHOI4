@@ -58,8 +58,10 @@ public class Player1 : MonoBehaviour
             Destroy(this.gameObject);
             SceneManager.LoadScene(scene);
         }
+
+
         //‰ñ•œˆ—
-        if(collision.gameObject.CompareTag("potion1"))
+        if (collision.gameObject.CompareTag("potion1"))
         {
             slider.value += 1;
         }
