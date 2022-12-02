@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class BulletDelete : MonoBehaviour
 {
-    bool Flag = true;
     private void FixedUpdate()
     {
 
@@ -14,19 +13,19 @@ public class BulletDelete : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            //フラグを反転させる
-            Flag = false;
-        }
-        Destroy(this.gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //コリジョンに当たったら
-        if (collision.gameObject.CompareTag("Enemy") && !Flag)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(this.gameObject);
         }
     }
+
+    //カメラの外に出たら削除
+    //private void OnBecameInvisible()
+    //{
+    //    Destroy(this.gameObject);
+    //}
 }

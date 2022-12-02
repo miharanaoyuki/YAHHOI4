@@ -29,7 +29,7 @@ public class Attack : MonoBehaviour
             offset = -1;
             returnFlag = false;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             offset = 1;
             returnFlag = true;
