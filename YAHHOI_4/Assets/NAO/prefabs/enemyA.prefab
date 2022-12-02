@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2710517097706994937}
   - component: {fileID: 9097706166281006256}
   - component: {fileID: 3207468278598880559}
+  - component: {fileID: 7344156780607131968}
   m_Layer: 0
   m_Name: enemyA
   m_TagString: Untagged
@@ -108,7 +109,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -198,3 +199,19 @@ PolygonCollider2D:
       - {x: -0.14, y: -2.23}
       - {x: 0, y: -2.1599998}
       - {x: -0.01, y: -2.08}
+--- !u!114 &7344156780607131968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879651579067665414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fd6174540d09d4a8cb5381963c9b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 1
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
+  itemPrefab: {fileID: 1308358888122577167, guid: 3eb56c3726cc20f44bab071520b7f0cd, type: 3}
