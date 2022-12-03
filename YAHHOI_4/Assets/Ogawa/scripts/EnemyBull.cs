@@ -11,21 +11,35 @@ public class EnemyBull : MonoBehaviour
     private Rigidbody2D rb;//Rigidbody2D
     private Vector2 newPos;//位置情報取得用
 
+    public float move;
+    public float time;
+    private int counter;
+
+    void Start()
+    {
+        move = move / 100;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        newPos = this.transform.position;//ここでプレイヤーの座標を取得
-        newPos.x += -1;
-        newPos.y += 0;
+        if (time == counter)
+        {
+            newPos = this.transform.position;//ここでプレイヤーの座標を取得
+            newPos.x += -1;
+            newPos.y += 0;
 
-        //生成、右に飛ばす
-        bullet = Instantiate(original) as GameObject;
-        bullet.transform.position = newPos;
-        Destroy(bullet, Limit);
-        rb = bullet.GetComponent<Rigidbody2D>();
+            //生成、右に飛ばす
+            bullet = Instantiate(original) as GameObject;
+            bullet.transform.position = newPos;
+            Destroy(bullet, Limit);
+            rb = bullet.GetComponent<Rigidbody2D>();
 
-        rb.velocity = new Vector2(b_x, 0);
+            rb.velocity = new Vector2(b_x, 0);
 
+            counter = 0;
+        }
+        counter++;
     }
 
     private void OnCollisionTrigger2D(Collision2D collision)
