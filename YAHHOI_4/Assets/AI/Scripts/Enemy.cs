@@ -26,6 +26,14 @@ public class Enemy : MonoBehaviour
         y += Ymove;
         //ç∂Ç…ÇÕïâÇÃílÇ
         rb.velocity = new Vector2(x / 1000, y / 1000);
+        if (HP == 0)
+        {
+            //GetComponent<AudioSource>().PlayOneShot(clip);
+            Instantiate(effect, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+            AudioSource.PlayClipAtPoint(clip, transform.position);
+        }
+
         Debug.Log("écÇËÅF" + HP);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,12 +45,6 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             HP--;
-            if (HP == 0)
-            {
-                GetComponent<AudioSource>().PlayOneShot(clip);
-                Instantiate(effect, transform.position, Quaternion.identity);
-                Destroy(this.gameObject);
-            }
         }
         if (collision.gameObject.CompareTag("Wall"))
         {
