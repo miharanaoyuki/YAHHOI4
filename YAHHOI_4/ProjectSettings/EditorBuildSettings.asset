@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 437bdc346433521418b4759e8f9f806d
   - enabled: 1
     path: Assets/NAO/Scenes/Basic/Rule1.unity
-    guid: 12b77d07dcbf34a9a814410da741c2af
+    guid: c606299f162ce4cbaade9ecc3433a069
   - enabled: 1
     path: Assets/NAO/Scenes/Basic/Rule2.unity
     guid: c92162c2ad920bd4a89f612851214f3c
