@@ -3927,7 +3927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1452955398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5663,7 +5663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   b_x: 10
   Limit: 2
-  original: {fileID: 7936339368610319410, guid: 9313593816fe1ec489ead48a30662083, type: 3}
+  original: {fileID: 5482814406526045950, guid: f5b8613e9157d2f4586fd95f47188daa, type: 3}
 --- !u!70 &2122197095
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
