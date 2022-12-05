@@ -716,5 +716,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4958240610640179438, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 116139926}
+    - target: {fileID: 4958240610640179438, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}
+      propertyPath: SceneName
+      value: Gameover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}

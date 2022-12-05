@@ -12,11 +12,12 @@ public class Player_test : MonoBehaviour
 
     public string SceneName;//ゲームオーバーになった時用
     public float speed;//プレイヤーの移動速度
-
+    SpriteRenderer sr;
 
     // Start is called before the first frame update
     void Start()
     {
+        this.sr = GetComponent<SpriteRenderer>();
         slider.value = 5;//体力最大値指定(初期化)
         //初期情報取得
         pr = GetComponent<Rigidbody2D>();
@@ -32,10 +33,12 @@ public class Player_test : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             px += speed;
+            sr.flipX = false;
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             px += -speed;
+            sr.flipX = true;
         }
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
@@ -58,6 +61,30 @@ public class Player_test : MonoBehaviour
             if (slider.value == 0)
             {
                 SceneManager.LoadScene(SceneName);
+            }
+        }
+        if (collision.gameObject.CompareTag("potion1"))
+        {
+            slider.value += 1;
+            if (slider.value <= 6)
+            {
+                slider.value = 5;
+            }
+        }
+        if (collision.gameObject.CompareTag("potion2"))
+        {
+            slider.value += 2;
+            if (slider.value <= 6)
+            {
+                slider.value = 5;
+            }
+        }
+        if (collision.gameObject.CompareTag("potion3"))
+        {
+            slider.value += 4;
+            if (slider.value <= 6)
+            {
+                slider.value = 5;
             }
         }
     }

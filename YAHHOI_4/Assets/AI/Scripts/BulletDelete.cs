@@ -21,6 +21,10 @@ public class BulletDelete : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     //ƒJƒƒ‰‚ÌŠO‚Éo‚½‚çíœ
