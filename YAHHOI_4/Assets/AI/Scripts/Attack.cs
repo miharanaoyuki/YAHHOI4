@@ -18,7 +18,7 @@ public class Attack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = 1;
+        offset = 1.25f;
     }
 
     // Update is called once per frame
@@ -26,12 +26,12 @@ public class Attack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            offset = -1;
+            offset = -1.25f;
             returnFlag = false;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            offset = 1;
+            offset = 1.25f;
             returnFlag = true;
         }
 
