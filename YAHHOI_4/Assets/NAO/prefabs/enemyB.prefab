@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 7653204505448494852}
   - component: {fileID: 5502331062210654261}
   - component: {fileID: 6337958015741149491}
-  - component: {fileID: 8506852147462726858}
   m_Layer: 0
   m_Name: enemyB
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,24 +214,3 @@ PolygonCollider2D:
       - {x: -0.19, y: -2.1599998}
       - {x: -0.12, y: -2.19}
       - {x: -0.06, y: -2.2}
---- !u!50 &8506852147462726858
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297819599299255956}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

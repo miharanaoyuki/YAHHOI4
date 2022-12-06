@@ -919,6 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4767124874623111845, guid: 25720367105164a5f9df144f22d2217e, type: 3}
+    - {fileID: 4767124874623111844, guid: 25720367105164a5f9df144f22d2217e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 25720367105164a5f9df144f22d2217e, type: 3}
 --- !u!1 &73450154
 GameObject:
@@ -5816,7 +5817,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 0.17666668
   usePosition: 1
   useRotation: 1
   useScale: 0
@@ -7131,7 +7132,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4767124874623111846, guid: 25720367105164a5f9df144f22d2217e, type: 3}
   m_PrefabInstance: {fileID: 54370508}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1186778322
+--- !u!114 &1186778321
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7140,9 +7141,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1186778320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bfe4fef7bda97f4bba6aa4c0520fc49, type: 3}
+  m_Script: {fileID: 11500000, guid: e4fd6174540d09d4a8cb5381963c9b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 3
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
+  itemPrefab: {fileID: 0}
 --- !u!4 &1186778325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4767124874623111865, guid: 25720367105164a5f9df144f22d2217e, type: 3}
@@ -9911,6 +9916,10 @@ PrefabInstance:
     - target: {fileID: 2630351399280437859, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630351399280437859, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2630351399280437859, guid: 7f61b48fe41a58f47a8beb37b2b3df45, type: 3}
       propertyPath: m_TagString
