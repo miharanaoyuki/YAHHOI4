@@ -6,9 +6,9 @@ public class EnemyWave : MonoBehaviour
 {
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
+    private Vector2 vec;
     public float Xmove = 0.0f;  //X軸の速度
     public float Ymove = 0.0f;  //Y軸の速度
-    float x, y = 0.0f;  //縦横
     public int ReverseTime = 0;//上下反転する間隔
     private int time = 0;
     // Start is called before the first frame update
@@ -21,17 +21,18 @@ public class EnemyWave : MonoBehaviour
     void FixedUpdate()
     {
         time += 1;
-        x += -Xmove;
-        y += Ymove;
+
+        vec.x += -Xmove;
+        vec.y += Ymove;
+
         if (ReverseTime <= time)
         {
-            y = -y;
+            Ymove = -Ymove;
             time = 0;
         }
 
         //左には負の値を
-        rb.velocity = new Vector2(x / 1000, y / 1000);
-        Debug.Log("Y座標：" + y);
+        rb.velocity = new Vector2(Xmove, Ymove);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,8 +47,6 @@ public class EnemyWave : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         //壁か画面外に出たら消したい
-
     }
 }
