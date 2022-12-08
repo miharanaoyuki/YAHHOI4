@@ -3568,7 +3568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: 9
+  move: 8
   time: 1000
 --- !u!60 &585534989
 PolygonCollider2D:
@@ -4061,7 +4061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   b_x: 10
   Limit: 2
-  original: {fileID: 5482814406526045950, guid: f5b8613e9157d2f4586fd95f47188daa, type: 3}
+  original: {fileID: 7936339368610319410, guid: 9313593816fe1ec489ead48a30662083, type: 3}
 --- !u!70 &638732086
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5817,7 +5817,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.17666668
+  m_progress: 0.67666674
   usePosition: 1
   useRotation: 1
   useScale: 0
@@ -7147,7 +7147,7 @@ MonoBehaviour:
   HP: 3
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 8109581056281870117, guid: a77ee5a436f6cc246a435522e996a11e, type: 3}
 --- !u!4 &1186778325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4767124874623111865, guid: 25720367105164a5f9df144f22d2217e, type: 3}
