@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2336564056615889418}
   - component: {fileID: 3351382680276639219}
+  - component: {fileID: -8928109357722643995}
   m_Layer: 0
   m_Name: fishS
   m_TagString: Enemy
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8928109357722643995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2861639284253387008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fd6174540d09d4a8cb5381963c9b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 2
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 0}
+  itemPrefab: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 904019144682622181}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Enemy
+  m_TagString: EBull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

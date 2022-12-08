@@ -98,6 +98,17 @@ public class Player : MonoBehaviour
         {
             speed = 0.05f;
         }
+
+        if (!on_damage && collision.gameObject.CompareTag("EBull"))
+        {
+            slider.value--;
+            OnDamageEffect();
+        }
+        if (slider.value == 0)
+        {
+            Destroy(this.gameObject);
+            SceneManager.LoadScene(scene);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
