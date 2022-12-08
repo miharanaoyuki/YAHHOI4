@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97402b570b81997418749f90b081c48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  b_x: 20
+  b_x: 10
   Limit: 2
   original: {fileID: 5482814406526045950, guid: f5b8613e9157d2f4586fd95f47188daa, type: 3}
 --- !u!70 &588566110
@@ -5368,3 +5368,60 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &4222497983691132754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.226679
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0839415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074776432479768936, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136891268699669104, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+      propertyPath: m_Name
+      value: dorodango
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
