@@ -216,11 +216,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 62929046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Script: {fileID: 11500000, guid: 22ba9baaef0b22240892c27b9df48a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -3
-  time: 1000
+  move: -5
 --- !u!50 &62929048
 Rigidbody2D:
   serializedVersion: 4
@@ -311,6 +310,22 @@ PolygonCollider2D:
       - {x: -0.32999998, y: -0.60499996}
       - {x: -0.32999998, y: -0.585}
       - {x: -0.34, y: -0.565}
+--- !u!58 &62929050
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62929046}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  serializedVersion: 2
+  m_Radius: 10
 --- !u!4 &62929052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2336564056615889418, guid: 55e34e47987b3fe44bc1df1a7fa4ba91, type: 3}
@@ -542,11 +557,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 99732825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
+  m_Script: {fileID: 11500000, guid: 22ba9baaef0b22240892c27b9df48a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   move: -5
-  time: 1000
+--- !u!58 &99732828
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99732825}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  serializedVersion: 2
+  m_Radius: 10
 --- !u!60 &99732829
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1279,6 +1309,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2336564056615889418, guid: 55e34e47987b3fe44bc1df1a7fa4ba91, type: 3}
   m_PrefabInstance: {fileID: 1842184474}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &418351437
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418351435}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  serializedVersion: 2
+  m_Radius: 9
 --- !u!114 &418351438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1538,7 +1584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   slider: {fileID: 993418265}
-  scene: 
+  scene: gameover
 --- !u!212 &488130488
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2186,6 +2232,7 @@ GameObject:
   - component: {fileID: 843761348}
   - component: {fileID: 843761347}
   - component: {fileID: 843761351}
+  - component: {fileID: 843761352}
   m_Layer: 0
   m_Name: fishS (2)
   m_TagString: Enemy
@@ -2205,7 +2252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: -9
+  move: -12
   time: 30
 --- !u!60 &843761348
 PolygonCollider2D:
@@ -2362,6 +2409,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &843761352
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843761346}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000009536743, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &869195377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5504,11 +5567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336564056615889418, guid: 55e34e47987b3fe44bc1df1a7fa4ba91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.63
+      value: 21.65
       objectReference: {fileID: 0}
     - target: {fileID: 2336564056615889418, guid: 55e34e47987b3fe44bc1df1a7fa4ba91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.08
+      value: -2.81
       objectReference: {fileID: 0}
     - target: {fileID: 2336564056615889418, guid: 55e34e47987b3fe44bc1df1a7fa4ba91, type: 3}
       propertyPath: m_LocalPosition.z
