@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public int HP;      //体力
     public float Xmove = 0.0f;  //X軸の速度
     public float Ymove = 0.0f;
-    float x, y = 0.0f;  //縦横
+    private Vector2 vec;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +22,9 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        x -= Xmove;
-        y += Ymove;
-        //左には負の値を
-        rb.velocity = new Vector2(x / 1000, y / 1000);
+        vec.x -= Xmove;
+        vec.y += Ymove;
+
         if (HP == 0)
         {
             //GetComponent<AudioSource>().PlayOneShot(clip);
@@ -34,6 +33,8 @@ public class Enemy : MonoBehaviour
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
 
+        //左には負の値を
+        rb.velocity = new Vector2(Xmove,Ymove);
         Debug.Log("残り：" + HP);
     }
     private void OnTriggerEnter2D(Collider2D collision)
