@@ -97,5 +97,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 2
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  destroySound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
   itemPrefab: {fileID: 0}
