@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class EnemyWave : MonoBehaviour
 {
-    Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
-    private Vector2 vec;
-    public float Xmove = 0.0f;  //X軸の速度
-    public float Ymove = 0.0f;  //Y軸の速度
+    public GameObject effect;
+    public AudioClip clip;
+    public float Xmove = 0.0f, Ymove = 0.0f;  //X軸の速度/Y軸の速度
+
     public int ReverseTime = 0;//上下反転する間隔
+
+    private Vector2 vec;
+    Rigidbody2D rb;     //リジッドボディ2D
     private int time = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        clip = gameObject.GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
@@ -22,16 +27,17 @@ public class EnemyWave : MonoBehaviour
     {
         time += 1;
 
-        vec.x += -Xmove;
-        vec.y += Ymove;
-
         if (ReverseTime <= time)
         {
             Ymove = -Ymove;
             time = 0;
         }
 
+        vec.x += -Xmove;
+        vec.y += Ymove;
+
         //左には負の値を
+        //rb.velocity = new Vector2(vec.x/1000, vec.y/1000);
         rb.velocity = new Vector2(Xmove, Ymove);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,7 +48,9 @@ public class EnemyWave : MonoBehaviour
         }
         if (HP == 0)
         {
+            Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
+            AudioSource.PlayClipAtPoint(clip, transform.position);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
