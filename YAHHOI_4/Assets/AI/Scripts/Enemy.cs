@@ -15,14 +15,14 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        clip = gameObject.GetComponent<AudioSource>().clip;
         rb = GetComponent<Rigidbody2D>();
+        clip = gameObject.GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        vec.x -= Xmove;
+        vec.x += Xmove;
         vec.y += Ymove;
 
         if (HP == 0)
