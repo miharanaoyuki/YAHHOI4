@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        //アプリフレームレートを60fpsに設定
+
+        Application.targetFrameRate = 60;
+
         slider.value = 5;
         speed = speed / 100;
         //点滅処理用に呼び出す
@@ -57,6 +61,11 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.DownArrow)))
         {
             Position.y -= speed;
+        }
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Title");
         }
 
         transform.position = Position;
