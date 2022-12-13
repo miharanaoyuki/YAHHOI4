@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemysSpawn : MonoBehaviour
 {
     public GameObject[] enemys;
+    private GameObject player;
     Vector2 vec;
-    public float y;
     public int sec = 0;
     private int time = 0;
 
@@ -15,7 +15,8 @@ public class EnemysSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
+        //enemys = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
     // Update is called once per frame
@@ -29,8 +30,8 @@ public class EnemysSpawn : MonoBehaviour
                 int index = Random.Range(0, enemys.Length);
                 int posY = Random.Range(-10, 10);
                 vec = enemys[index].transform.position;
-                vec.y = gameObject.transform.position.y;
-                Instantiate(enemys[index], new Vector2(0, posY), Quaternion.identity);
+                vec.x += player.transform.position.x + 30;
+                Instantiate(enemys[index], new Vector2(vec.x, posY), Quaternion.identity);
                 time = 0;
             }
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject effect;
+    //private GameObject myObject;
     public AudioClip clip;
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
@@ -15,6 +16,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //myObject = GetComponent<GameObject>();
         rb = GetComponent<Rigidbody2D>();
         clip = gameObject.GetComponent<AudioSource>().clip;
     }
@@ -27,15 +29,16 @@ public class Enemy : MonoBehaviour
 
         if (HP == 0)
         {
+            //effect.transform.localScale = this.gameObject.transform.localScale;
             //GetComponent<AudioSource>().PlayOneShot(clip);
-            Instantiate(effect, transform.position, Quaternion.identity);
+            Instantiate(effect.transform, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
 
         //左には負の値を
         rb.velocity = new Vector2(Xmove,Ymove);
-        Debug.Log("残り：" + HP);
+        Debug.Log("effect size:" + effect.transform.localScale);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
