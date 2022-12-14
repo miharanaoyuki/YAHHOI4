@@ -13,6 +13,7 @@ TagManager:
   - potion3
   - numa
   - EBull
+  - Field
   layers:
   - Default
   - TransparentFX

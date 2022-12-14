@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8567243107770509420
+--- !u!1 &1241762719859293076
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,27 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4976600812261639116}
-  - component: {fileID: 162853945781557921}
-  - component: {fileID: 8800230289878182163}
-  - component: {fileID: 5522492498590189291}
-  - component: {fileID: -966422440691251948}
-  - component: {fileID: 199946584530837298}
-  - component: {fileID: 4484884019284100412}
+  - component: {fileID: 1241762719859293073}
+  - component: {fileID: 1241762719859293074}
+  - component: {fileID: 1241762719859293075}
+  - component: {fileID: 4957034545576787968}
+  - component: {fileID: 4710385919615251400}
+  - component: {fileID: 8897482632184091234}
   m_Layer: 0
-  m_Name: Monster_Bat
+  m_Name: Enemy_LastArea
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4976600812261639116
+--- !u!4 &1241762719859293073
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
+  m_GameObject: {fileID: 1241762719859293076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -36,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &162853945781557921
+--- !u!212 &1241762719859293074
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
+  m_GameObject: {fileID: 1241762719859293076}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,44 +75,41 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3800871404644214177, guid: 7bfeae0bc0c1d244a815555e94dcf69d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4ef6529987add345a4305b96e82b45e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.1, y: 0.55}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8800230289878182163
-Animator:
-  serializedVersion: 3
+--- !u!70 &1241762719859293075
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
+  m_GameObject: {fileID: 1241762719859293076}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c54501f1c2bc8484184325409cc8ed8e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &5522492498590189291
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.02}
+  m_Size: {x: 0.7, y: 0.35}
+  m_Direction: 1
+--- !u!50 &4957034545576787968
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
+  m_GameObject: {fileID: 1241762719859293076}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -121,67 +117,41 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &-966422440691251948
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.21, y: 0.89}
-    newSize: {x: 1.1, y: 0.55}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.21, y: 0.89}
-  m_EdgeRadius: 0
---- !u!114 &199946584530837298
+--- !u!114 &4710385919615251400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
+  m_GameObject: {fileID: 1241762719859293076}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f58930a30caca344c9143951981ba6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
+  HP: 1
   effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
-  Xmove: -6
-  Ymove: 4
+  clip: {fileID: 8300000, guid: fcceb97a2f6a5a94fbc9978dc3de7f29, type: 3}
+  Xmove: 2
+  Ymove: 1
   ReverseTime: 40
---- !u!82 &4484884019284100412
+--- !u!82 &8897482632184091234
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8567243107770509420}
+  m_GameObject: {fileID: 1241762719859293076}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fcceb97a2f6a5a94fbc9978dc3de7f29, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

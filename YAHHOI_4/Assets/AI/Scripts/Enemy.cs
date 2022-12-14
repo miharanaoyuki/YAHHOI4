@@ -5,18 +5,17 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject effect;
-    //private GameObject myObject;
     public AudioClip clip;
     Rigidbody2D rb;     //リジッドボディ2D
     public int HP;      //体力
     public float Xmove = 0.0f;  //X軸の速度
     public float Ymove = 0.0f;
     private Vector2 vec;
+    bool OnFlag = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        //myObject = GetComponent<GameObject>();
         rb = GetComponent<Rigidbody2D>();
         clip = gameObject.GetComponent<AudioSource>().clip;
     }
@@ -29,8 +28,6 @@ public class Enemy : MonoBehaviour
 
         if (HP == 0)
         {
-            //effect.transform.localScale = this.gameObject.transform.localScale;
-            //GetComponent<AudioSource>().PlayOneShot(clip);
             Instantiate(effect.transform, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
             AudioSource.PlayClipAtPoint(clip, transform.position);
@@ -38,10 +35,11 @@ public class Enemy : MonoBehaviour
 
         //左には負の値を
         rb.velocity = new Vector2(Xmove,Ymove);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //HitFlag = false;
+
+        if (!OnFlag)
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -52,6 +50,13 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Field"))
+        {
+            OnFlag = false;
         }
     }
 }

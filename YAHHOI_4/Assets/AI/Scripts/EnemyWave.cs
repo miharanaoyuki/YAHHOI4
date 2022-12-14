@@ -15,6 +15,7 @@ public class EnemyWave : MonoBehaviour
     Rigidbody2D rb;     //リジッドボディ2D
     private int time = 0;
 
+    bool OnFlag = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +38,11 @@ public class EnemyWave : MonoBehaviour
         vec.y += Ymove;
 
         //左には負の値を
-        //rb.velocity = new Vector2(vec.x/1000, vec.y/1000);
         rb.velocity = new Vector2(Xmove, Ymove);
+        if (!OnFlag)
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -53,8 +57,11 @@ public class EnemyWave : MonoBehaviour
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        //壁か画面外に出たら消したい
+        if (collision.gameObject.CompareTag("Field"))
+        {
+            OnFlag = false;
+        }
     }
 }
