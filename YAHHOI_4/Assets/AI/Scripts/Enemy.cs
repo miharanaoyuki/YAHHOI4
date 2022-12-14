@@ -38,7 +38,6 @@ public class Enemy : MonoBehaviour
 
         //¶‚É‚Í•‰‚Ì’l‚ğ
         rb.velocity = new Vector2(Xmove,Ymove);
-        Debug.Log("effect size:" + effect.transform.localScale);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

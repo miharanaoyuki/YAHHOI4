@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 3800871404644214177, guid: 7bfeae0bc0c1d244a815555e94dcf69d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.1, y: 0.55}
@@ -186,9 +186,9 @@ MonoBehaviour:
   HP: 2
   effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
-  Xmove: -10
-  Ymove: 5
-  ReverseTime: 60
+  Xmove: -6
+  Ymove: 4
+  ReverseTime: 40
 --- !u!82 &4484884019284100412
 AudioSource:
   m_ObjectHideFlags: 0

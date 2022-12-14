@@ -15680,7 +15680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0866ae6428214734fa6b6e306f6f7b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target_name: Player
+  target_name: Player_2
   scene: 6
 --- !u!60 &607703873
 PolygonCollider2D:
@@ -45274,7 +45274,7 @@ PrefabInstance:
       objectReference: {fileID: 2008688590}
     - target: {fileID: 4958240610640179438, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}
       propertyPath: SceneName
-      value: Gameover
+      value: Gameover5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}
