@@ -918,8 +918,9 @@ PrefabInstance:
       value: -2.08
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4767124874623111845, guid: 25720367105164a5f9df144f22d2217e, type: 3}
+    - {fileID: 0}
     - {fileID: 4767124874623111844, guid: 25720367105164a5f9df144f22d2217e, type: 3}
+    - {fileID: 4767124874623111845, guid: 25720367105164a5f9df144f22d2217e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 25720367105164a5f9df144f22d2217e, type: 3}
 --- !u!1 &73450154
 GameObject:
@@ -5817,7 +5818,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.01
+  m_progress: 0.51000005
   usePosition: 1
   useRotation: 1
   useScale: 0
