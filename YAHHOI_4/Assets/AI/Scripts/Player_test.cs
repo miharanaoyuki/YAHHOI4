@@ -28,7 +28,6 @@ public class Player_test : MonoBehaviour
     {
         px = 0.0f;
         py = 0.0f;
-
         //ˆÚ“®
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
@@ -40,6 +39,7 @@ public class Player_test : MonoBehaviour
             px += -speed;
             sr.flipX = true;
         }
+
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             py += speed;
