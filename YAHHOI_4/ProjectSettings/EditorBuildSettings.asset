@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NAO/Scenes/Stage/4.unity
     guid: a5e25612903574bc1bfa8037a6e7a08d
+  - enabled: 1
+    path: Assets/AI/Scene/5.unity
+    guid: 70190787a3fa7264da9fa7bee326a625
+  - enabled: 1
+    path: Assets/AI/Scene/6.unity
+    guid: 90255d0a86ed3804f99a130461e777ec
+  - enabled: 1
+    path: Assets/AI/Scene/6-2.unity
+    guid: 7464ad7d55e294f469360dc1dccd7c70
   m_configObjects: {}

@@ -13,6 +13,10 @@ public class BulletDelete : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
