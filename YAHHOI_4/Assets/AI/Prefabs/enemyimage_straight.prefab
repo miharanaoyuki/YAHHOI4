@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4634426084875534723, guid: 36ace82245a65d1488a7d17118471b7d, type: 3}
-  speed: 8
-  Limit: 120
+  speed: 6
+  Limit: 180
 --- !u!82 &4534908017432499070
 AudioSource:
   m_ObjectHideFlags: 0
