@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4634426084875534723, guid: 36ace82245a65d1488a7d17118471b7d, type: 3}
-  speed: 6
-  Limit: 120
+  speed: 4
+  Limit: 240
 --- !u!114 &6574534669223608592
 MonoBehaviour:
   m_ObjectHideFlags: 0

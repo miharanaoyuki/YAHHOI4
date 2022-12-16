@@ -3,10 +3,9 @@ using UnityEngine;
 public class EnemyBulletDelete : MonoBehaviour
 {
     //このスクリプトは敵に発射させる弾に付ける
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        //弾かれたりしてもアレなのでトリガー（物理演算が行われない）で
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")||collision.gameObject.CompareTag("Wall"))
         {
             //Playerタグが付いているオブジェクトに当たったら消す
             Destroy(this.gameObject);
