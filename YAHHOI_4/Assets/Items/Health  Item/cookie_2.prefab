@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9083865066518924830}
   - component: {fileID: 7510635382966697548}
   - component: {fileID: 801701083346573735}
-  - component: {fileID: 6215004240738200602}
+  - component: {fileID: -8992808550488225002}
   m_Layer: 0
   m_Name: cookie_2
   m_TagString: potion2
@@ -160,7 +160,7 @@ PolygonCollider2D:
       - {x: 0.16499999, y: -0.85499996}
       - {x: 0.275, y: -0.875}
       - {x: 0.355, y: -0.875}
---- !u!114 &6215004240738200602
+--- !u!114 &-8992808550488225002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,6 +169,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9132009957533380940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780e993151af0a64993095c9cb12ac19, type: 3}
+  m_Script: {fileID: 11500000, guid: d07a9a5aebd437c42958ec370a780b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
