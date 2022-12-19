@@ -1865,7 +1865,6 @@ GameObject:
   - component: {fileID: 970078914}
   - component: {fileID: 970078913}
   - component: {fileID: 970078912}
-  - component: {fileID: 970078911}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Enemy
@@ -1873,18 +1872,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &970078911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970078910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07a9a5aebd437c42958ec370a780b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &970078912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1900,7 +1887,7 @@ MonoBehaviour:
   HP: 7
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 1308358888122577167, guid: 3eb56c3726cc20f44bab071520b7f0cd, type: 3}
+  itemPrefab: {fileID: 9132009957533380940, guid: 87be64723bb8ca045b31022d9af09dbc, type: 3}
 --- !u!60 &970078913
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3351,7 +3338,7 @@ MonoBehaviour:
   HP: 3
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 9132009957533380940, guid: 87be64723bb8ca045b31022d9af09dbc, type: 3}
 --- !u!1 &1203740377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,7 +3854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326622672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.3451, y: -4.677, z: 0}
+  m_LocalPosition: {x: 26.3451, y: -4.677, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4384,7 +4371,6 @@ GameObject:
   - component: {fileID: 1461889298}
   - component: {fileID: 1461889297}
   - component: {fileID: 1461889299}
-  - component: {fileID: 1461889300}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -4712,19 +4698,7 @@ MonoBehaviour:
   HP: 2
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 1308358888122577167, guid: 3eb56c3726cc20f44bab071520b7f0cd, type: 3}
---- !u!114 &1461889300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461889293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07a9a5aebd437c42958ec370a780b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 2465643499302462137, guid: e93c2398d2e90354ba409d562d0f05aa, type: 3}
 --- !u!1 &1485779341
 GameObject:
   m_ObjectHideFlags: 0
@@ -5530,8 +5504,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674871479}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 31.27, y: 3.44, z: 0}
-  m_LocalScale: {x: 0.17, y: 1, z: 1}
+  m_LocalPosition: {x: 31.27, y: 3.3191, z: 0}
+  m_LocalScale: {x: 0.18259701, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 37
