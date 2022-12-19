@@ -5819,7 +5819,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.009196401
+  m_progress: 0
   usePosition: 1
   useRotation: 1
   useScale: 0
@@ -7162,7 +7162,7 @@ MonoBehaviour:
   HP: 3
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 8109581056281870117, guid: a77ee5a436f6cc246a435522e996a11e, type: 3}
+  itemPrefab: {fileID: 7442254618969125540, guid: c8a3a654dcdee8648981e83f5db397da, type: 3}
 --- !u!4 &1186778325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4767124874623111865, guid: 25720367105164a5f9df144f22d2217e, type: 3}
