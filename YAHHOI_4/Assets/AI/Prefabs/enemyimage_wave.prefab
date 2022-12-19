@@ -148,7 +148,7 @@ MonoBehaviour:
   HP: 1
   effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
-  Xmove: 2
+  Xmove: -2
   Ymove: 1
   ReverseTime: 40
 --- !u!82 &600317507824321977

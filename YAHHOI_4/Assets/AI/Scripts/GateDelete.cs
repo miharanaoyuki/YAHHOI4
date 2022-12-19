@@ -27,7 +27,7 @@ public class GateDelete : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("EditorOnly"))
+        if (collision.gameObject.CompareTag("Item"))
         {
             keyFlag = false;
         }

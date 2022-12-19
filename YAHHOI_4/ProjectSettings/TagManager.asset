@@ -15,6 +15,7 @@ TagManager:
   - EBull
   - Field
   - Boss
+  - Item
   layers:
   - Default
   - TransparentFX

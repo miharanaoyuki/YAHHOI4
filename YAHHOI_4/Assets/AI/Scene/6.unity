@@ -702,7 +702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141911275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.014696, y: -3.75, z: -10}
+  m_LocalPosition: {x: -11.111057, y: -3.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2419,7 +2419,7 @@ PrefabInstance:
       objectReference: {fileID: 116139926}
     - target: {fileID: 4958240610640179438, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}
       propertyPath: SceneName
-      value: Gameover
+      value: Gameover5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d68277afb275146ab0adf0bbcf051c, type: 3}

@@ -147,7 +147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
-  HP: 3
+  HitClip: {fileID: 0}
+  HP: 2
   Xmove: -4
   Ymove: 0
 --- !u!82 &4534908017432499070
