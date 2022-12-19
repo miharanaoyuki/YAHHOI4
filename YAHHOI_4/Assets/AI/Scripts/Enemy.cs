@@ -6,8 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public GameObject effect;
     public AudioClip clip;
-    Rigidbody2D rb;     //リジッドボディ2D
-    public int HP;      //体力
+    public AudioClip HitClip;
+    Rigidbody2D rb;//リジッドボディ2D
+    public int HP = 0;//体力
     public float Xmove = 0.0f;  //X軸の速度
     public float Ymove = 0.0f;
     private Vector2 vec;
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         clip = gameObject.GetComponent<AudioSource>().clip;
+        HitClip = gameObject.GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
@@ -33,19 +35,20 @@ public class Enemy : MonoBehaviour
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
 
-        //左には負の値を
-        rb.velocity = new Vector2(Xmove,Ymove);
-
         if (!OnFlag)
         {
             Destroy(this.gameObject);
         }
+        
+        //移動情報の更新
+        rb.velocity = new Vector2(Xmove,Ymove);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             HP--;
+            AudioSource.PlayClipAtPoint(HitClip, transform.position);
         }
         if (collision.gameObject.CompareTag("Wall"))
         {
