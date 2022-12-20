@@ -1,84 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class BossStatus : MonoBehaviour
 {
-    private int HP = 0, time = 0, limit = 0, reverse = 0, atk_time = 0;
+    public Slider slider;
+    private Rigidbody2D rb;//boss_rigidbody
     private Vector2 vec;
-    private Rigidbody2D rb;
-    bool AttackFlag = true;
-    private float Xspeed = 0, Yspeed = 0;
+
+    private float Xspeed = 0.0f, Yspeed = 0.0f;
+    private int HP = 0, time = 0, reverse = 0;
+    public int limit = 0;
+
+    bool atkFlag = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        HP = 50;
         rb = GetComponent<Rigidbody2D>();
+        slider.value = 30;
+        HP = 30;
+        Xspeed = 4.0f;
+        Yspeed = 4.0f;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        reverse++;
-        time++;
-        //10•b–ˆ‚É“ËiUŒ‚‚³‚¹‚½‚¢
+        time++;//Y”½“]
+        reverse++;//X”½“]
+
+        vec.y += Yspeed;
+        vec.x += Xspeed;
+
         if (time > 300)
         {
-            AttackFlag = false;
+            Yspeed = -Yspeed;
             time = 0;
         }
-
-        //true
-        if (AttackFlag)
+        if (reverse > 360)
         {
-            Yspeed = 2.0f;
-            if (reverse > 180)
-            {
-                Yspeed = -Yspeed;
-                reverse = 0;
-            }
+            Xspeed = -Xspeed;
+            reverse = 0;
         }
-
-        //false
-        if (!AttackFlag)
-        {
-            Yspeed = 0;
-            Xspeed = 4.0f;
-            limit++;
-            vec.x = Xspeed;
-            Xspeed -= 0.01f;
-            if (limit > 60)
-            {
-                atk_time++;
-                limit = 0;
-                if (atk_time < 60)
-                {
-                    Xspeed = -Xspeed;
-                }
-            }
-            else
-            {
-                AttackFlag = true;
-            }
-        }
-
-
-        rb.velocity = new Vector2(vec.x, vec.y);
-        //rb.velocity = new Vector2(Xspeed,Yspeed);
 
         if (HP == 0)
         {
             Destroy(this.gameObject);
             SceneManager.LoadScene("GameClear");
         }
+        rb.velocity = new Vector2(Xspeed, Yspeed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            slider.value--;
             HP--;
         }
     }
