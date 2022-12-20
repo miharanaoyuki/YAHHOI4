@@ -321,6 +321,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4767124874623111866, guid: 25720367105164a5f9df144f22d2217e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767124874623111866, guid: 25720367105164a5f9df144f22d2217e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767124874623111866, guid: 25720367105164a5f9df144f22d2217e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4767124874623111867, guid: 25720367105164a5f9df144f22d2217e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 87
@@ -3678,7 +3690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddb93a02d2c4434db1e468784f44327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: 8
+  move: 9
   time: 1000
 --- !u!60 &585534989
 PolygonCollider2D:
@@ -5928,7 +5940,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.6766668
+  m_progress: 0.17666668
   usePosition: 1
   useRotation: 1
   useScale: 0
@@ -9157,7 +9169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903650390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 69.93, y: 1, z: 15.291824}
+  m_LocalPosition: {x: 69.89, y: 2.55, z: 15.291824}
   m_LocalScale: {x: 5.0944157, y: 5.0944157, z: 5.0944157}
   m_Children: []
   m_Father: {fileID: 1063822125}
