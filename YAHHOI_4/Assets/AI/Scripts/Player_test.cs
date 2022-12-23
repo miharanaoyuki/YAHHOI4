@@ -65,7 +65,7 @@ public class Player_test : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         //“G‚É“–‚½‚Á‚½‚Ìˆ—
-        if (!on_damage && (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EBull")))
+        if (!on_damage && (collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EBull")))
         {
             slider.value--;
             OnDamageEffect();

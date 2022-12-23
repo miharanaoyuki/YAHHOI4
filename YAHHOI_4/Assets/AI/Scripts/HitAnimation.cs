@@ -5,7 +5,6 @@ using UnityEngine;
 public class HitAnimation : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
-    private int effectTime = 0;
     bool HitFlag = false;
 
     // Start is called before the first frame update
