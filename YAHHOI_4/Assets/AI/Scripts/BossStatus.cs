@@ -11,7 +11,7 @@ public class BossStatus : MonoBehaviour
     private Vector2 vec;
 
     private float Xspeed = 0.0f, Yspeed = 0.0f;
-    private int HP = 0, time = 0, reverse = 0;
+    private int time = 0, reverse = 0;
     public int limit = 0;
 
     bool atkFlag = false;
@@ -21,7 +21,6 @@ public class BossStatus : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         slider.value = 30;
-        HP = 30;
         Xspeed = 4.0f;
         Yspeed = 4.0f;
     }
@@ -46,20 +45,19 @@ public class BossStatus : MonoBehaviour
             reverse = 0;
         }
 
-        if (HP == 0)
+        if (slider.value == 0)
         {
             Destroy(this.gameObject);
-            SceneManager.LoadScene("GameClear");
+            SceneManager.LoadScene("Clear");
         }
         rb.velocity = new Vector2(Xspeed, Yspeed);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             slider.value--;
-            HP--;
         }
     }
 }
