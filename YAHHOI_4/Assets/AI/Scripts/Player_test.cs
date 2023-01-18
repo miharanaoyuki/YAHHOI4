@@ -14,6 +14,12 @@ public class Player_test : MonoBehaviour
     public float speed;//プレイヤーの移動速度
     SpriteRenderer sr;
 
+    //体力値の数値化と可視化
+    Text HPtext;
+    private string HPstring;
+
+    private int nowHP;//その時の体力
+
     bool on_damage = false;
     private SpriteRenderer renderer;
 
@@ -21,9 +27,14 @@ public class Player_test : MonoBehaviour
     void Start()
     {
         this.sr = GetComponent<SpriteRenderer>();
+        //UIタグをプレイヤーのスライダーに付けてテキストを子に配置して探させて指定する
+        HPtext = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<Text>();
         slider.value = 5;//体力最大値指定(初期化)
+        nowHP = (int)slider.value;//整数に変換して代入させてる
         //初期情報取得
         pr = GetComponent<Rigidbody2D>();
+        HPstring = nowHP.ToString();
+        HPtext.text = HPstring;
         renderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
@@ -59,6 +70,11 @@ public class Player_test : MonoBehaviour
         {
             py += -speed;
         }
+
+        //HPの更新
+        HPstring = nowHP.ToString();
+        HPtext.text = HPstring;
+        
         pr.velocity = new Vector2(px, py);
     }
 
@@ -68,6 +84,9 @@ public class Player_test : MonoBehaviour
         if (!on_damage && (collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EBull")))
         {
             slider.value--;
+            //情報の更新
+            nowHP = (int)slider.value;
+
             OnDamageEffect();
             //0以下：死　シーンチェンジ
             if (slider.value == 0)
@@ -78,6 +97,7 @@ public class Player_test : MonoBehaviour
         if (collision.gameObject.CompareTag("potion1"))
         {
             slider.value += 1;
+            nowHP = (int)slider.value;
             if (slider.value <= 6)
             {
                 slider.value = 5;
@@ -86,6 +106,7 @@ public class Player_test : MonoBehaviour
         if (collision.gameObject.CompareTag("potion2"))
         {
             slider.value += 2;
+            nowHP = (int)slider.value;
             if (slider.value <= 6)
             {
                 slider.value = 5;
@@ -94,6 +115,7 @@ public class Player_test : MonoBehaviour
         if (collision.gameObject.CompareTag("potion3"))
         {
             slider.value += 4;
+            nowHP = (int)slider.value;
             if (slider.value <= 6)
             {
                 slider.value = 5;
