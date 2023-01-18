@@ -19,14 +19,24 @@ public class Player : MonoBehaviour
     private bool on_damage = false;
     private SpriteRenderer renderer;
 
+    //体力値の数値化と可視化
+    Text HPtext;
+    private string HPstring;
+    private int nowHP;//その時の体力
     void Start()
     {
         //アプリフレームレートを60fpsに設定
 
         Application.targetFrameRate = 60;
 
+        HPtext = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<Text>();
+        nowHP = (int)slider.value;//整数に変換して代入させてる
+
         slider.value = 5;
         speed = speed / 100;
+
+        HPstring = nowHP.ToString();
+        HPtext.text = HPstring;
         //点滅処理用に呼び出す
         renderer = gameObject.GetComponent<SpriteRenderer>();
     }
@@ -68,6 +78,9 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("Title");
         }
 
+        HPstring = nowHP.ToString();
+        HPtext.text = HPstring;
+
         transform.position = Position;
 
         Debug.Log(speed);
@@ -79,6 +92,7 @@ public class Player : MonoBehaviour
         if (!on_damage && collision.gameObject.CompareTag("Enemy"))
         {
             slider.value--;
+            nowHP = (int)slider.value;
             OnDamageEffect();
         }
         if (slider.value == 0)
@@ -90,14 +104,17 @@ public class Player : MonoBehaviour
         if(collision.gameObject.CompareTag("potion1"))
         {
             slider.value += 1;
+            nowHP = (int)slider.value;
         }
         if (collision.gameObject.CompareTag("potion2"))
         {
             slider.value += 2;
+            nowHP = (int)slider.value;
         }
         if (collision.gameObject.CompareTag("potion3"))
         {
             slider.value += 4;
+            nowHP = (int)slider.value;
         }
     }
 
@@ -111,6 +128,7 @@ public class Player : MonoBehaviour
         if (!on_damage && collision.gameObject.CompareTag("EBull"))
         {
             slider.value--;
+            nowHP = (int)slider.value;
             OnDamageEffect();
         }
         if (slider.value == 0)
