@@ -231,4 +231,4 @@ MonoBehaviour:
   HP: 2
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 9132009957533380940, guid: 87be64723bb8ca045b31022d9af09dbc, type: 3}
+  itemPrefab: {fileID: 1029466246974129095, guid: ff9f2959d2e0fa94cbac3dc7d62562ed, type: 3}
