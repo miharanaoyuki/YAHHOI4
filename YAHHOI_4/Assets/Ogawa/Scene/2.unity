@@ -1159,6 +1159,7 @@ MonoBehaviour:
   b_x: 10
   Limit: 2
   original: {fileID: 9136891268699669104, guid: 7b59bf82788b54242a3a3b50411a59f6, type: 3}
+  clip: {fileID: 0}
 --- !u!70 &588566110
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1504,16 +1505,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767156153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1021245208}
-  m_RootOrder: 1
+  m_Father: {fileID: 2114131504}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -508.35, y: 324.71994}
+  m_AnchoredPosition: {x: -5.560028, y: 0.000030517578}
   m_SizeDelta: {x: 285.52, y: 70.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767156155
@@ -1538,7 +1539,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1549,7 +1550,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Health
+  m_Text: 0
 --- !u!222 &767156156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2533,7 +2534,7 @@ MonoBehaviour:
   HP: 2
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 1308358888122577167, guid: 3eb56c3726cc20f44bab071520b7f0cd, type: 3}
 --- !u!1 &1021245203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,7 +2647,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2114131504}
-  - {fileID: 767156154}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3338,7 +3338,7 @@ MonoBehaviour:
   HP: 3
   effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   destroySound: {fileID: 8300000, guid: bc433d6865b20428da456a6c9611b76a, type: 3}
-  itemPrefab: {fileID: 9132009957533380940, guid: 87be64723bb8ca045b31022d9af09dbc, type: 3}
+  itemPrefab: {fileID: 1029466246974129095, guid: ff9f2959d2e0fa94cbac3dc7d62562ed, type: 3}
 --- !u!1 &1203740377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,7 +5986,7 @@ GameObject:
   - component: {fileID: 2114131505}
   m_Layer: 5
   m_Name: Slider
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6004,6 +6004,7 @@ RectTransform:
   m_Children:
   - {fileID: 654830348}
   - {fileID: 77882745}
+  - {fileID: 767156154}
   m_Father: {fileID: 1021245208}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
