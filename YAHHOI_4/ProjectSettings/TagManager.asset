@@ -16,6 +16,9 @@ TagManager:
   - Field
   - Boss
   - Item
+  - In
+  - Out
+  - UI
   layers:
   - Default
   - TransparentFX

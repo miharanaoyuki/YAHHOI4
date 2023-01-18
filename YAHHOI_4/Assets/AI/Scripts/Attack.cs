@@ -11,7 +11,7 @@ public class Attack : MonoBehaviour
     private Rigidbody2D rb;//Rigidbody2D
     private Vector2 newPos;//ˆÊ’uî•ñæ“¾—p
     private float offset = 0;
-
+    public AudioClip clip;//UŒ‚‚ÌSE
     bool pushFlag = true;//‰Ÿ‚µ‚½‚©‚Ç‚¤‚©
     bool returnFlag = true;
 
@@ -19,6 +19,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         offset = 1.25f;
+        clip = gameObject.GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
@@ -67,6 +68,7 @@ public class Attack : MonoBehaviour
                 {
                     rb.velocity = new Vector2(b_x, 0);
                 }
+                AudioSource.PlayClipAtPoint(clip, transform.position);
             }
         }
         else
