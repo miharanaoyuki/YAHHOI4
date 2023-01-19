@@ -41,6 +41,7 @@ public class Player_test : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         px = 0.0f;
         py = 0.0f;
 
