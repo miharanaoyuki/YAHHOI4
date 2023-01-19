@@ -7,6 +7,7 @@ public class EnemyWave : MonoBehaviour
     public int HP;      //ëÃóÕ
     public GameObject effect;
     public AudioClip clip;
+    public AudioClip hit;
     public float Xmove = 0.0f, Ymove = 0.0f;  //Xé≤ÇÃë¨ìx/Yé≤ÇÃë¨ìx
 
     public int ReverseTime = 0;//è„â∫îΩì]Ç∑ÇÈä‘äu
@@ -21,6 +22,7 @@ public class EnemyWave : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         clip = gameObject.GetComponent<AudioSource>().clip;
+        hit = gameObject.GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
@@ -49,6 +51,7 @@ public class EnemyWave : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             HP--;
+            AudioSource.PlayClipAtPoint(hit, transform.position);
         }
         if (HP == 0)
         {
