@@ -5859,6 +5859,7 @@ GameObject:
   - component: {fileID: 2122197096}
   - component: {fileID: 2122197095}
   - component: {fileID: 2122197094}
+  - component: {fileID: 2122197101}
   - component: {fileID: 2122197098}
   m_Layer: 0
   m_Name: Player
@@ -5882,7 +5883,7 @@ MonoBehaviour:
   b_x: 10
   Limit: 2
   original: {fileID: 7936339368610319410, guid: 9313593816fe1ec489ead48a30662083, type: 3}
-  clip: {fileID: 0}
+n
 --- !u!70 &2122197095
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5939,21 +5940,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &2122197098
-MonoBehaviour:
+--- !u!82 &2122197098
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122197093}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16040a4cf96c02541a0232a61d2af183, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  slider: {fileID: 1789522356}
-  scene: Gameover2
+
 --- !u!212 &2122197099
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6019,3 +6014,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2122197101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122197093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16040a4cf96c02541a0232a61d2af183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  slider: {fileID: 0}
+  scene: Gameover3
