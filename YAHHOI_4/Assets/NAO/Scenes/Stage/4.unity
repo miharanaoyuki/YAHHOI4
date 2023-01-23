@@ -5882,6 +5882,7 @@ MonoBehaviour:
   b_x: 10
   Limit: 2
   original: {fileID: 7936339368610319410, guid: 9313593816fe1ec489ead48a30662083, type: 3}
+  clip: {fileID: 0}
 --- !u!70 &2122197095
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5947,12 +5948,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2122197093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55bbaa285119b99469339e0f6cc400ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 16040a4cf96c02541a0232a61d2af183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
   slider: {fileID: 1789522356}
-  scene: Gameover3
+  scene: Gameover2
 --- !u!212 &2122197099
 SpriteRenderer:
   m_ObjectHideFlags: 0
