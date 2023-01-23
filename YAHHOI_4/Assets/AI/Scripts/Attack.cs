@@ -68,7 +68,8 @@ public class Attack : MonoBehaviour
                 {
                     rb.velocity = new Vector2(b_x, 0);
                 }
-                AudioSource.PlayClipAtPoint(clip, transform.position);
+                //AudioSource.PlayClipAtPoint(clip, transform.position);
+                GetComponent<AudioSource>().PlayOneShot(clip);
             }
         }
         else

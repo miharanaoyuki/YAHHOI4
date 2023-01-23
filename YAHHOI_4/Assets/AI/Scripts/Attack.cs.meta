@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - original: {instanceID: 0}
-  - clip: {fileID: 8300000, guid: 6786874e44561ec4b8375db0ad527b25, type: 3}
+  - clip: {fileID: 8300000, guid: 5dd5f47c6606a434989f210318c46536, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
