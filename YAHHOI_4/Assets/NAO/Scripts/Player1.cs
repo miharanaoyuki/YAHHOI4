@@ -12,6 +12,14 @@ public class Player1 : MonoBehaviour
 
     public string scene;
 
+    //ダメージフラグ
+    private bool on_damage = false;
+    private SpriteRenderer renderer;
+
+    //体力値の数値化と可視化
+    Text HPtext;
+    private string HPstring;
+    private int nowHP;//その時の体力
     void Start()
     {
         slider.value = 5;
@@ -73,5 +81,24 @@ public class Player1 : MonoBehaviour
         {
             slider.value += 4;
         }
+    }
+
+    void OnDamageEffect()
+    {
+        // ダメージフラグON
+        on_damage = true;
+
+        // コルーチン開始
+        StartCoroutine("WaitForIt");
+    }
+
+    IEnumerator WaitForIt()
+    {
+        // 1秒間処理を止める
+        yield return new WaitForSeconds(1.5f);
+
+        // １秒後ダメージフラグをfalseにして点滅を戻す
+        on_damage = false;
+        renderer.color = new Color(1f, 1f, 1f, 1f);
     }
 }
