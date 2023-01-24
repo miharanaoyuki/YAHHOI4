@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7491d36e5ecaaa46bcb136a05531027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 615194821}
 --- !u!114 &73450159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4034,7 +4034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  slider: {fileID: 0}
+  slider: {fileID: 781743329}
   scene: gameover3
 --- !u!212 &615194828
 SpriteRenderer:
