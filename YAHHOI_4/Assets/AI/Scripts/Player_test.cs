@@ -17,9 +17,9 @@ public class Player_test : MonoBehaviour
     //体力値の数値化と可視化
     Text HPtext;
     private string HPstring;
-
     private int nowHP;//その時の体力
 
+    public AudioClip damageClip;//被弾時の音
     bool on_damage = false;
     private SpriteRenderer renderer;
 
@@ -36,6 +36,7 @@ public class Player_test : MonoBehaviour
         HPstring = nowHP.ToString();
         HPtext.text = HPstring;
         renderer = gameObject.GetComponent<SpriteRenderer>();
+        damageClip = GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
@@ -72,6 +73,12 @@ public class Player_test : MonoBehaviour
             py += -speed;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //現在のSceneを取得・再読み込み（やり直し）
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         //HPの更新
         HPstring = nowHP.ToString();
         HPtext.text = HPstring;
@@ -94,6 +101,7 @@ public class Player_test : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneName);
             }
+            GetComponent<AudioSource>().PlayOneShot(damageClip);
         }
         if (collision.gameObject.CompareTag("potion1"))
         {

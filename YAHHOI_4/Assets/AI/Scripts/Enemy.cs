@@ -5,8 +5,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject effect;
-    public AudioClip clip;
-    public AudioClip HitClip;
+    [SerializeField] private AudioSource audioBox;
+
+    [SerializeField] private AudioClip HitClip;
+    [SerializeField] private AudioClip DeathClip;
+
     Rigidbody2D rb;//リジッドボディ2D
     public int HP = 0;//体力
     public float Xmove = 0.0f;  //X軸の速度
@@ -18,8 +21,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        clip = gameObject.GetComponent<AudioSource>().clip;
-        HitClip = gameObject.GetComponent<AudioSource>().clip;
     }
 
     // Update is called once per frame
@@ -32,23 +33,23 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(effect.transform, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
-            AudioSource.PlayClipAtPoint(clip, transform.position);
+            DEATH_SE();
         }
 
         if (!OnFlag)
         {
             Destroy(this.gameObject);
         }
-        
+
         //移動情報の更新
-        rb.velocity = new Vector2(Xmove,Ymove);
+        rb.velocity = new Vector2(Xmove, Ymove);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             HP--;
-            AudioSource.PlayClipAtPoint(HitClip, transform.position);
+            HIT_SE();
         }
         if (collision.gameObject.CompareTag("Wall"))
         {
@@ -61,5 +62,15 @@ public class Enemy : MonoBehaviour
         {
             OnFlag = false;
         }
+    }
+
+    public void HIT_SE()
+    {
+        audioBox.PlayOneShot(HitClip);
+    }
+
+    public void DEATH_SE()
+    {
+        audioBox.PlayOneShot(DeathClip);
     }
 }

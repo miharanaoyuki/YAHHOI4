@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     private GameObject bullet;//攻撃時の弾:選択不可
     private Rigidbody2D rb;//Rigidbody2D
     private Vector2 newPos;//位置情報取得用
-    private float offset = 0;
+    private float offset = 0;//位置を中心からずらす用
     public AudioClip clip;//攻撃時のSE
     bool pushFlag = true;//押したかどうか
     bool returnFlag = true;
@@ -68,7 +68,6 @@ public class Attack : MonoBehaviour
                 {
                     rb.velocity = new Vector2(b_x, 0);
                 }
-                //AudioSource.PlayClipAtPoint(clip, transform.position);
                 GetComponent<AudioSource>().PlayOneShot(clip);
             }
         }
