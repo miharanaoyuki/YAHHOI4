@@ -15,6 +15,8 @@ public class BossStatus : MonoBehaviour
     public int limit = 0;
 
     bool atkFlag = false;
+    //[SerializeField] private AudioClip hitClip;
+
 
     // Start is called before the first frame update
     void Start()
