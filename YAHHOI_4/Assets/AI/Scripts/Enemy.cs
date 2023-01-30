@@ -5,22 +5,25 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject effect;
-    [SerializeField] private AudioSource audioBox;
+    [SerializeField] private AudioSource[] audioBox;//0=HIT,1=DEATH
 
-    [SerializeField] private AudioClip HitClip;
-    [SerializeField] private AudioClip DeathClip;
+    private AudioSource HitClip;   //0
+    private AudioSource DeathClip; //1
 
     Rigidbody2D rb;//リジッドボディ2D
     public int HP = 0;//体力
     public float Xmove = 0.0f;  //X軸の速度
     public float Ymove = 0.0f;
     private Vector2 vec;
-    bool OnFlag = true;
+    bool OnFlag = true;//範囲内かどうか
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioBox = GetComponents<AudioSource>();
+        HitClip = audioBox[0];
+        DeathClip = audioBox[1];
     }
 
     // Update is called once per frame
@@ -33,9 +36,11 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(effect.transform, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
-            DEATH_SE();
+            DeathClip.PlayOneShot(DeathClip.clip);
+            //DeathClip.PlayOneShot(audioBox[1].clip);
         }
 
+        //範囲外に出たら
         if (!OnFlag)
         {
             Destroy(this.gameObject);
@@ -49,8 +54,10 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             HP--;
-            HIT_SE();
+            HitClip.PlayOneShot(HitClip.clip);
+            //HitClip.PlayOneShot(audioBox[0].clip);
         }
+
         if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
@@ -62,15 +69,5 @@ public class Enemy : MonoBehaviour
         {
             OnFlag = false;
         }
-    }
-
-    public void HIT_SE()
-    {
-        audioBox.PlayOneShot(HitClip);
-    }
-
-    public void DEATH_SE()
-    {
-        audioBox.PlayOneShot(DeathClip);
     }
 }
