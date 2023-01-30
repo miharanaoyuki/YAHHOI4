@@ -4035,7 +4035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   slider: {fileID: 781743329}
-  scene: gameover3
+  scene: gameover2
 --- !u!212 &615194828
 SpriteRenderer:
   m_ObjectHideFlags: 0
