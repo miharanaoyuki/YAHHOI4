@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  audioBox: {fileID: -1658528918390438460}
-  HitClip: {fileID: 8300000, guid: 818ab48e5d2e3814bbac36919d0df1f8, type: 3}
-  DeathClip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
+  audioBox:
+  - {fileID: -1658528918390438460}
+  - {fileID: 4534908017432499070}
   HP: 2
   Xmove: -4
   Ymove: 0
