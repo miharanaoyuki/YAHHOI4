@@ -25,6 +25,7 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //左
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             offset = -1.25f;
@@ -35,6 +36,7 @@ public class Attack : MonoBehaviour
                 returnFlag = true;
             }
         }
+        //右
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             offset = 1.25f;
@@ -45,7 +47,7 @@ public class Attack : MonoBehaviour
                 returnFlag = false;
             }
         }
-
+        //スペース
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (pushFlag)
@@ -55,7 +57,7 @@ public class Attack : MonoBehaviour
                 newPos.x += offset;
                 newPos.y += 0;
 
-                //生成、右に飛ばす
+                //生成、飛ばす
                 bullet = Instantiate(original) as GameObject;
                 bullet.transform.position = newPos;
                 Destroy(bullet, Limit);
