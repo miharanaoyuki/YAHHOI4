@@ -9,6 +9,7 @@ public class Return : MonoBehaviour
     public AudioClip clip;
     public AudioClip hit;
     public float Xmove = 0.0f, Ymove = 0.0f;  //Xé≤ÇÃë¨ìx/Yé≤ÇÃë¨ìx
+    private int turn = 0;
 
     [Tooltip("è„â∫îΩì]Ç∑ÇÈä‘äu")]
     public int ReverseTime = 0;//è„â∫îΩì]Ç∑ÇÈä‘äu
@@ -32,6 +33,8 @@ public class Return : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Vector3 scale = transform.localScale;
+
         time += 1;
         r_time += 1;
         if (ReverseTime <= time)
@@ -43,12 +46,17 @@ public class Return : MonoBehaviour
         //ç∂âEîΩì]óp
         if (MOVE_Rerutrn <= r_time)
         {
-
+            Xmove = -Xmove;
+            r_time = 0;
+            turn += 1;
+            if (turn % 2 == 0){ scale.x = 1; }
+            else { scale.x = -1; }
         }
 
         vec.x += -Xmove;
         vec.y += Ymove;
 
+        transform.localScale = scale;
         //ç∂Ç…ÇÕïâÇÃílÇ
         rb.velocity = new Vector2(Xmove, Ymove);
         if (!OnFlag)

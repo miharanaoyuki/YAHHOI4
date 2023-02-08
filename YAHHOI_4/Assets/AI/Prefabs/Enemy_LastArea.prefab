@@ -328,11 +328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3645850f1be9df4e9a573f33069f405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 0
+  HP: 1
   effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
   clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
   hit: {fileID: 8300000, guid: 818ab48e5d2e3814bbac36919d0df1f8, type: 3}
-  Xmove: -3
+  Xmove: 3
   Ymove: 1
   ReverseTime: 20
-  MOVE_Rerutrn: 90
+  MOVE_Rerutrn: 360
