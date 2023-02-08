@@ -4126,6 +4126,7 @@ GameObject:
   - component: {fileID: 1511245030}
   - component: {fileID: 1511245029}
   - component: {fileID: 1511245033}
+  - component: {fileID: 1511245034}
   m_Layer: 0
   m_Name: mine
   m_TagString: Untagged
@@ -4240,6 +4241,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3739ef363ad12664c8f83f1ada306148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1511245034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511245028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fd6174540d09d4a8cb5381963c9b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 4
+  effectPrefab: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  destroySound: {fileID: 0}
+  itemPrefab: {fileID: 0}
 --- !u!1 &1523969982
 GameObject:
   m_ObjectHideFlags: 0
