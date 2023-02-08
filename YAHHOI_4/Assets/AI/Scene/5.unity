@@ -40555,6 +40555,8 @@ GameObject:
   - component: {fileID: 935267441}
   - component: {fileID: 935267435}
   - component: {fileID: 935267437}
+  - component: {fileID: 935267445}
+  - component: {fileID: 935267444}
   - component: {fileID: 935267440}
   - component: {fileID: 935267442}
   m_Layer: 0
@@ -40608,7 +40610,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -40919,6 +40921,86 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!66 &935267444
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935267434}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 935267437}
+    m_ColliderPaths:
+    - - X: 27499707
+        Y: -82500000
+      - X: 27499707
+        Y: 82500000
+      - X: -27500000
+        Y: 82499707
+      - X: -27499707
+        Y: -82500000
+  - m_Collider: {fileID: 935267445}
+    m_ColliderPaths:
+    - - X: 65999707
+        Y: -2749999
+      - X: 65999707
+        Y: 41250000
+      - X: -66000000
+        Y: 41249707
+      - X: -65999707
+        Y: -2749999
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 2.7499413, y: -8.25}
+      - {x: 2.75, y: -0.27499992}
+      - {x: 6.599971, y: -0.2749706}
+      - {x: 6.5999417, y: 4.125}
+      - {x: 2.749971, y: 4.125021}
+      - {x: 2.7499413, y: 8.25}
+      - {x: -2.75, y: 8.249942}
+      - {x: -2.750022, y: 4.124979}
+      - {x: -6.6, y: 4.124942}
+      - {x: -6.5999417, y: -0.27499992}
+      - {x: -2.7499847, y: -0.2750293}
+      - {x: -2.7499413, y: -8.25}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!61 &935267445
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935267434}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0.035}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.24, y: 0.27}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.24, y: 0.08}
+  m_EdgeRadius: 0
 --- !u!1001 &1139844520
 PrefabInstance:
   m_ObjectHideFlags: 0
