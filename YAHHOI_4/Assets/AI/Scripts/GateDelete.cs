@@ -5,7 +5,7 @@ using UnityEngine;
 public class GateDelete : MonoBehaviour
 {
     public GameObject Gate;//delete1:bad
-    bool keyFlag = true;
+    bool keyFlag = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,18 +18,19 @@ public class GateDelete : MonoBehaviour
     void Update()
     {
         Gate = GameObject.FindGameObjectWithTag("EditorOnly");
-        if (!keyFlag)
+        if (keyFlag)
         {
             Destroy(Gate);
             //Gate1.SetActive(false);
+            Destroy(this.gameObject);
             Debug.Log("Gate to Open");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Item"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            keyFlag = false;
+            keyFlag = true;
         }
     }
 
