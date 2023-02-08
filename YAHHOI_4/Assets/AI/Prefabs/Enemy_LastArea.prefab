@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1241762719859293074}
   - component: {fileID: 1241762719859293075}
   - component: {fileID: 4957034545576787968}
-  - component: {fileID: 4710385919615251400}
   - component: {fileID: 8897482632184091234}
   - component: {fileID: -4346801684201225605}
+  - component: {fileID: 263555616497554714}
   m_Layer: 0
   m_Name: Enemy_LastArea
   m_TagString: Enemy
@@ -124,25 +124,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4710385919615251400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241762719859293076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f58930a30caca344c9143951981ba6e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 1
-  effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
-  clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
-  hit: {fileID: 8300000, guid: 818ab48e5d2e3814bbac36919d0df1f8, type: 3}
-  Xmove: 2
-  Ymove: 1
-  ReverseTime: 40
 --- !u!82 &8897482632184091234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -335,3 +316,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &263555616497554714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241762719859293076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3645850f1be9df4e9a573f33069f405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  effect: {fileID: 2644314253308661964, guid: f048211a41f933e46a929f1e6570c9fa, type: 3}
+  clip: {fileID: 8300000, guid: fca36060e5ed34d4892577719149d601, type: 3}
+  hit: {fileID: 8300000, guid: 818ab48e5d2e3814bbac36919d0df1f8, type: 3}
+  Xmove: -3
+  Ymove: 1
+  ReverseTime: 20
+  MOVE_Rerutrn: 90
